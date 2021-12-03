@@ -1,9 +1,13 @@
+/*.nav-bar-phone{
+
+}*/
+
 .contenantInfos{
     position: absolute;
-    top: 80px;
+    top: 1000px;
 }
 @media  screen and (min-width = 1024px) {
-    .contenant{
+    .contenantInfos{
         flex-direction: row;
 
     }
@@ -33,20 +37,17 @@ body{
     padding:0px;
     
 }
-h3{
+.titreArticle{
     margin: 0;
-    font-size: medium;
-}
-nav{
-    height: 100px;
-    background-color: #23282f;
+    font-size: 20px;
 }
 
-article{
+
+.carte{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
     opacity: 0.9;
     max-height: 100px;
@@ -58,13 +59,16 @@ article{
 
 }
 
-article > div{
+.contenuArticle{
     
     margin-left: 10px;
     margin-right: 10px;
+    overflow: clip;
 }
 
-
+.desciption{
+    font-size: 15px;
+}
 .vignette{
    height: auto;
    
@@ -81,4 +85,11 @@ article > div{
     background-color: #23282f;
     opacity: 0.9;
     color: #e1e3e1;
+    
+}
+
+span{
+    font-style: italic;
+    margin-left: 10%;
+    width: 200px;
 }
