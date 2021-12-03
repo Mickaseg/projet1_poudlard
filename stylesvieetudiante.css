@@ -202,13 +202,16 @@ border-radius: 5px;
 
 .livredorwho {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin: 20px 0 10px 0;
     width: 75%;
     font-weight: bold;
 }
 
+#insertMaison {
+    font-weight: bold;
+}
 .livredor {
     text-align: justify;
     margin-top: 40px;
@@ -267,9 +270,19 @@ border-radius: 5px;
     margin-top: 20px
 }
 
+#insertext {
+    width: 250px;
+    border-radius: 6px;
+    margin : 10px;
+    height: 70px;
+}
+
 #livredorwho2 {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
