@@ -1,0 +1,52 @@
+
+.formation {
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+background: linear-gradient black;
+    background-color: #23282f;
+    background-image: url("https://images.pexels.com/photos/8391466/pexels-photo-8391466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 28px;
+    color: whitesmoke;
+    text-shadow: black 5px 5px 5px;
+}
+
+.titreformation {
+  color: goldenrod;
+  font-size: 60px;
+}
+
+.tableaur {
+    box-sizing: 1000px;
+    height: 1000px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    color:  whitesmoke;
+    font-weight: bolder;
+    text-shadow: 7px 7px 7px rgb(3, 3, 3);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formulaireformation {
+    display: flex;
+    justify-content: space-around;
+    size: 60%;
+    size: cover;
+    margin-top: 80px;
+    padding: 50px;
+  }
+
+  td,
+  th {
+    font-family: "Courier New", Courier, monospace;
+  }
