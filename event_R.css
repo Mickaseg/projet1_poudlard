@@ -1,0 +1,282 @@
+
+
+/* Couleurs principales
+bgcolor: #23282F (GRIS) 
+bgcolor: #F7FFF7 (BLANC) 
+bgcolor: #E1E3E1 (BEIGE) 
+bgcolor: #444389 (VIOLET) 
+bgcolor: #231e4e */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/***************************** Barre de navigation ***************************************/
+
+.nav-bar {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #23282f;
+  border-bottom: #aaa solid 1px;
+  z-index: 205;
+  margin: 0;
+}
+
+.nav-bar-gauche {
+  display: none;
+}
+.nav-bar-droite {
+  display: none;
+}
+
+.nav-bar-logo {
+  position: absolute;
+  width: 39px;
+  top: 25px;
+  left: 35px;
+  z-index: 1000;
+}
+
+/* Animation liens de la barre de navigation */
+.nav-bar-liens {
+  display: inline-block;
+}
+.nav-bar-liens::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  margin: 5px auto 0 auto;
+  transition: width 0.3s ease-out;
+}
+
+.nav-bar-liens:hover::after {
+  width: 100%;
+}
+
+/* Menu Hamburger */
+
+#nav-bar-hamburger {
+  height: 35px;
+  width: 39px;
+  /* background: salmon; */
+  position: absolute;
+  top: 29px;
+  right: 35px;
+  z-index: 10000;
+}
+
+.nav-bar-cont-lignes {
+  width: 100%;
+  height: 39px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-bar-ligne {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-bar-ligne:nth-child(1) {
+  top: 0px;
+}
+.nav-bar-ligne:nth-child(2) {
+  top: 13px;
+}
+.nav-bar-ligne:nth-child(3) {
+  top: 26px;
+}
+
+#nav-bar-hamburger.active .nav-bar-ligne:nth-child(1) {
+  top: 13px;
+  transform: rotate(135deg);
+}
+#nav-bar-hamburger.active .nav-bar-ligne:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+#nav-bar-hamburger.active .nav-bar-ligne:nth-child(3) {
+  top: 13px;
+  transform: rotate(-135deg);
+}
+
+/* Animation barre de navigation telephone */
+
+.nav-bar-phone {
+  height: calc(100vh - 80px);
+  min-height: 900px;
+  width: 100%;
+  background-color: #23282f;
+  position: relative;
+  z-index: 200;
+  left: -100%;
+  transition: all 0.5s ease;
+}
+
+.nav-bar-phone-liste {
+  padding-top: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar-phone-items {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 70px;
+  font-size: 25px;
+}
+
+.nav-bar-phone-items a {
+  position: relative;
+  color: #aaa;
+}
+
+.nav-bar-phone-items a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  display: block;
+  width: 50%;
+  background: #aaa;
+  height: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.nav-bar-phone-items a:hover::after {
+  width: 0;
+}
+
+.nav-bar-phone-items a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  display: block;
+  width: 50%;
+  background: #aaa;
+  height: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.nav-bar-phone-items a:hover::before {
+  width: 0;
+}
+
+.phoneVisible {
+  left: 0px;
+}
+/***************************************  FIN DE LA PARTIE DE LEO  ***********************************************/
+  /* VIDEO FOND NUIT + ETOILES ANIMEES
+  
+  CSS
+
+  #myVideo { 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  HTML
+          <video autoplay muted loop id="myVideo">
+            <source src="../../video/nuitetoilee.mp4" type="video/mp4">
+        </video> */
+/*************************************** PARTIE ROMAIN PAGE - EVENEMENTS  *************************************/
+
+main {
+    position : absolute;
+    top: 80px;
+  }
+
+ /* MEP DES PARTIES EVENTS */ 
+  .event {
+    border: none ;
+    border-radius: 10px;
+    margin: 1px 5px;;
+  }
+  .eventH1 {
+    border: none;
+    width: 100%;
+    font-size : 1.4rem;
+    padding: 0 0 0 25px;
+    margin-top: 25px;
+  }
+  .event_titre_article {
+    border : none;
+    width: 100%;
+    padding : 0 0 5px 30px;
+    font-size : 0.8rem;
+  }
+  .event_img_article {
+    width: 100%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    margin-bottom: -4px; /* ERREUR AVEC ESPACE ICI*/
+  }
+  .event_parag_article{
+    border-top: 7px solid none;
+    border-bottom: 7px solid none;
+    padding : 10px ;
+    font-size: 1.0rem;
+    text-align : justify;    
+  }
+
+.event_separation {
+    border: 3px solid none;
+    width: 100%;
+    display : flex;
+    flex-direction: column;
+
+}
+
+  .intersection {
+    background: linear-gradient(-90deg, rgba(163,15,41,1) 0%, rgba(255,255,255,1) 100%);
+    width: 40%;
+    height: 7px;
+    display: flex;
+    align-self : flex-end;
+
+  }
+
+  .logo_intersection { /* LOGO ENTRE BLOC */
+    background-color: none;
+    align-self : center;
+    margin : 15px;
+    }
+  .intersection2 {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 2%, rgba(255,255,255,1) 100%);
+    width: 40%;
+    height: 7px;
+
+  }
+
+@media screen and (min-width: 1200px) { 
+  main { 
+    background-color : lightgoldenrodyellow;
+    }
+  }
