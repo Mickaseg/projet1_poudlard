@@ -9,6 +9,10 @@ body {
     /* background: linear-gradient(90deg, rgba(15,14,14,1) 0%, rgba(113,14,34,1) 100%); */
 }
 
+main{
+    margin-top: 90px;
+}
+
 :root {
     --main-bg-color: #231e4e; /* (VIOLET)  */
     --secondary-bg-color: #23282F; /* (GRIS)  */
@@ -63,7 +67,9 @@ height: 80px;
 }
 
 #wrap {
-    position: relative;
+    position: absolute;
+    top: 80px;
+    width: 100%;
 }
 
 #navbar {

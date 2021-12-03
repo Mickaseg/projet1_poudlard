@@ -10,21 +10,22 @@
 </head>
 <body>
   <header>
-    <!-- barre de navigation -->
+    <!------------------------------------- Début barre de navigation ----------------------------->
     <nav class="nav-bar">
       <!-- nav bar gauche -->
       <ul class="nav-bar-gauche">
-        <li class="nav-bar-liens"><a href="#">Ecole</a></li>
-        <li class="nav-bar-liens"><a href="#">Campus</a></li>
-        <li class="nav-bar-liens"><a href="#">Programme</a></li>
+        <li class="nav-bar-liens"><a href="school.html">Ecole</a></li>
+        <li class="nav-bar-liens"><a href="campushome.html">Campus</a></li>
+        <li class="nav-bar-liens"><a href="formation.html">Programme</a></li>
       </ul>
 
       <!-- logo -->
-      <img
-        class="nav-bar-logo levitate"
-        src="http://y1n.fr/Favicon/HarryFavicon.ico"
-        alt="logo de poudlard"
-      />
+      <a href="index.html"
+        ><img
+          class="nav-bar-logo levitate"
+          src="http://y1n.fr/Favicon/HarryFavicon.ico"
+          alt="logo de poudlard"
+      /></a>
 
       <!-- hamburger -->
       <div id="nav-bar-hamburger">
@@ -36,42 +37,52 @@
       </div>
       <!-- nav bar droite -->
       <ul class="nav-bar-droite">
-        <li class="nav-bar-liens"><a href="#">Evenements</a></li>
-        <li class="nav-bar-liens"><a href="#">Vie Etudiante</a></li>
-        <li class="nav-bar-liens"><a href="#">Info</a></li>
+        <li class="nav-bar-liens"><a href="event.html">Evenements</a></li>
+        <li class="nav-bar-liens">
+          <a href="vieetudiante.html">Vie Etudiante</a>
+        </li>
+        <li class="nav-bar-liens"><a href="infos.html">Info</a></li>
       </ul>
     </nav>
     <!-- Menu telephone -->
     <nav class="nav-bar-phone">
       <ul class="nav-bar-phone-liste">
-        <li class="nav-bar-phone-items"><a href="#">Home</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Ecole</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Campus</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Programme</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Evenements</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Vie étudiante</a></li>
-        <li class="nav-bar-phone-items"><a href="#">Info</a></li>
+        <li class="nav-bar-phone-items"><a href="index.html">Home</a></li>
+        <li class="nav-bar-phone-items"><a href="school.html">Ecole</a></li>
+        <li class="nav-bar-phone-items">
+          <a href="campushome.html">Campus</a>
+        </li>
+        <li class="nav-bar-phone-items">
+          <a href="formation.html">Programme</a>
+        </li>
+        <li class="nav-bar-phone-items">
+          <a href="event.html">Evenements</a>
+        </li>
+        <li class="nav-bar-phone-items">
+          <a href="vieetudiante.html">Vie étudiante</a>
+        </li>
+        <li class="nav-bar-phone-items"><a href="infos.html">Info</a></li>
       </ul>
     </nav>
-
-    <!-- Bannière -->
+<!-------------------------------- Fin Barre de navigation --------------------------------------------------->
+    
+<ul id="wrap">
+  <li>
+      <a id="buttonnav" href="#">Sommaire<span class="fleche"></span></a>
+      <ul id="navbar">
+          <li id="li1"><a href="#">Actualités</a></li>
+          <li id="li2"><a href="#">Livre d'or</a></li>
+          <li id="li3"><a href="#">Acces à l'ecole</a></li>
+          <li id="li4"><a href="#">Offre d'emploi</a></li>
+          <li id="li5"><a href="#">Reseaux Sociaux</a></li>
+      </ul>
+  </li>
+</ul>
   </header>
-
+  <main>
 
     <!-- Yan - La vie étudiante -->
 
-    <ul id="wrap">
-        <li>
-            <a id="buttonnav" href="#">Sommaire<span class="fleche"></span></a>
-            <ul id="navbar">
-                <li id="li1"><a href="#">Actualités</a></li>
-                <li id="li2"><a href="#">Livre d'or</a></li>
-                <li id="li3"><a href="#">Acces à l'ecole</a></li>
-                <li id="li4"><a href="#">Offre d'emploi</a></li>
-                <li id="li5"><a href="#">Reseaux Sociaux</a></li>
-            </ul>
-        </li>
-    </ul>
     <div id="contenuei" class="contenueii">
         <div id="actualite" class="sectionnav"  onmousedown="return false" onselectstart="return false">
             <h2 class="actualiteh2">News du mois</h2>
@@ -111,7 +122,7 @@
     </div>
 
         <div id="livredor" class="sectionnav">
-            <h2 class="actualiteh2">Ils nous ont laissé un avis : </h2>
+            <h2 class="actualiteh2">Ils ont laissé un avis : </h2>
             <div id="blocklivredor">
               <div class="livredor" id="livredorinsert">
                 <p><div id="insertext"></div></p>
@@ -189,9 +200,9 @@
             <div class="oldactu1">
               <div class="actu">
                 <div class="actuP0">
-                  <p>logo</p>
-                  <p>quand</p>
-                  <p>quand2</p>
+                  <p>Section</p>
+                  <p></p>
+                  <p></p>
                 </div>
               </div>
           </div>
@@ -199,11 +210,11 @@
             <div class="actu">
               
               <div class="actuP0">
-                <p>[Black Friday] Retrouvez toutes les meilleurs promos !</p>
-                <p>Dont 30% sur le Nimbus 2000 avec le code promo "Abdou21".</p>
-                <p>quand2</p>
-                <p>quand3</p>
-                <p>quand4</p>
+                <p>en cours</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
               </div>
             </div>
         </div>
@@ -211,8 +222,7 @@
           <div class="actu" class="actuEmploi">
         
             <div class="actuP0">
-              <p>[Important] Tentative d'attaque de detraqueurs</p>
-              <p>Information à propos de l'attaque.</p>
+              <p>de developpeement</p>
             </div>
           </div>
       </div>
@@ -232,6 +242,8 @@
           </div>
         </div>
     </div>
+    </div>
+  </main>
     <script src="script.js"></script>
 </body>
 </html>
