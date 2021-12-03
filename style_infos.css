@@ -1,0 +1,76 @@
+@media  screen and (min-width = 1024px) {
+    .contenant{
+        flex-direction: row;
+
+    }
+    
+}
+body{
+    margin:0;
+    padding:0;
+
+    background-image: url("./assets/fond_infos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+h1{
+    color: #e1e3e1;
+    text-align: center;
+    background-color: #23282f;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+h2{
+    margin: 0;
+    text-size-adjust: ;
+    font-size: medium;
+}
+nav{
+    height: 100px;
+    background-color: #23282f;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0.9;
+    max-height: 100px;
+    margin-bottom: 10px;
+    background-color: #23282f;
+    color: #e1e3e1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+article > div{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.vignette{
+   height: auto;
+   
+   width: 15%;
+   min-width: 100px;
+   max-width: 150px;
+   border-radius: 15px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23282f;
+    opacity: 0.9;
+    color: #e1e3e1;
+}
