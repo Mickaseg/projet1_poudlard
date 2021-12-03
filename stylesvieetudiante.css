@@ -1,0 +1,433 @@
+
+
+/* YAN | Vie etudiante | Ne rien modifier */
+/* YAN | Mobile First */
+body {
+    margin:0;
+    padding: 0;
+    /* background-color: #F7FFF7 */
+    /* background: linear-gradient(90deg, rgba(15,14,14,1) 0%, rgba(113,14,34,1) 100%); */
+}
+
+main{
+    margin-top: 90px;
+}
+
+:root {
+    --main-bg-color: #231e4e; /* (VIOLET)  */
+    --secondary-bg-color: #23282F; /* (GRIS)  */
+    --third-bg-color: #F7FFF7; /* (BLANC)  */
+    --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
+  
+    --light-font-color: #f1f1f1;
+    --dark-font-color: #23282F;
+    
+    --title-font-family: 'harry_pregular', serif;
+    --sous-titre-font-family: 'MonteCarlo', cursive;
+    --parag-font-family: 'Roboto', sans-serif;
+  }
+
+header {
+    
+height: 80px;
+
+}
+
+/* Partie perso de Yan : */
+
+#wrap {
+    list-style: none;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+#wrap li {
+    display: flex;
+    justify-content: center;
+}
+
+#wrap li {
+
+    top: 10%;
+}
+
+#wrap a, #navbar li {
+    height: 80px;
+    width: 100%;
+    background-color: #23282f;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 0.85;
+    font-style: none;
+    font-weight: bold;
+}
+
+#wrap {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+#navbar {
+    /* display: none; */
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 0;
+    font-family: var(--parag-font-family)
+}
+
+#buttonnav {
+    font-family: var(--parag-font-family)
+}
+
+
+/* #wrap li:hover ul{
+    display: block;
+} */
+
+#wrap li:visited:hover ul {
+    display: none
+}
+
+
+#contenuei {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sectionnav {
+    display: none;
+}
+
+.fleche {
+color: goldenrod;
+width: 0;
+height: 0;
+margin-left: 10px;
+margin-top: 6px;
+vertical-align: middle;
+border-top: 15px solid;
+border-right: 6px solid transparent;
+border-left: 6px solid transparent;
+}
+
+/* Actualité */
+
+#actualite {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.actu, .livredor {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+width: 350px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
+background-color: #f1f1f1;
+font-family: var(--parag-font-family);
+color: var(--dark-font-color);
+}
+
+
+
+
+.actu:hover, .livredor:hover {
+    /* L'image est grossie de 5% */
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+    }
+
+.actu p:first-child {
+    font-weight: bold;
+}
+
+.actuP {
+    margin: 10px 0;
+    width : 270px;
+    text-align: left;
+    font-family: var(--parag-font-family);
+}
+
+.actu1Img {
+width : 270px;
+height : 150px;
+border-radius: 5px;
+}
+
+.oldactu1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px
+}
+
+.actualiteh2 {
+    padding: 0;
+    margin: 0
+}
+
+/* Livre d'or */
+
+
+.sectionnav h2 {
+    text-align: center;
+    margin-bottom:15px;
+
+}
+
+#blocklivredor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.livredorwho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+    width: 75%;
+    font-weight: bold;
+}
+
+.livredor {
+    text-align: justify;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.livredor > p {
+    width: 270px;
+    display: flex;
+}
+
+#livredortext {
+    width: 270px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#livredortextP {
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+#livredortextM {
+    height: 20px;
+    margin-top: 10px;;
+    width: 80%;
+    border-radius: 6px;
+}
+
+.livredorp {
+    margin : 10px;
+    height: 70px;
+    width: 200px;
+}
+
+#livredorsubmit {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    width: 70px,;
+    background-color: rgb(212, 211, 211);
+    
+}
+
+#livredorsubmit:hover {
+    background-color: #23282f;
+    color: white;
+}
+
+#livredorinsert {
+    display: none;
+    margin-top: 20px
+}
+
+#livredorwho2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Plan d'acces à l'ecole */
+
+#hautduaccesecole, #hautduaccesecole2 {
+    margin-bottom: 20px;
+    font-family: var(--parag-font-family);
+    font-weight: bold;
+    text-align: center;
+}
+
+#where1, #where2 {
+    margin: 20px 0;
+}
+
+#accealecole2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%
+}
+
+#actu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+#actu2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#iframegare {
+    width: 300px;
+    height: 300px;
+}
+
+#actuacces {
+    width: 270px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+#actuacces, .gmap_canvas {
+    border-radius: 10px;;
+}
+
+#actu > p {
+    color: #7E7E7E;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.actualiteh2 {
+    margin: 0;
+}
+
+/* *************  Recherche d'emploi ********* */
+/* Box shadow recup sur actualité */
+
+.actuEmploi {
+    height: 200px
+}
+.actuP0 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+        
+.actuP1 { grid-area: 1 / 1 / 2 / 2; }
+.actuP2 { grid-area: 1 / 3 / 2 / 4; }
+.actuP3 { grid-area: 2 / 1 / 3 / 3; }
+.actuP4 { grid-area: 3 / 1 / 4 / 2; }
+
+
+/* *************  Reseau sociaux ********* */
+
+#actupReseauxSociaux {
+    text-align: center;
+}
+
+/* *************  Desktop ********* */
+
+@media screen and (min-width: 850px) {
+
+    body {
+        cursor : default;
+    }
+
+    #blockactu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        margin-top: 20px;
+    }
+
+    .actu { 
+        margin: 0 30px;
+    }
+
+    #blocklivredor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .livredor { 
+        width: 320px;
+        height: 270px;
+        margin: 20px;
+
+    }
+
+    #actu {
+        background-color: #ffff;
+        box-shadow: none;
+        }
+    
+    #wherePrincipal {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        justify-content: space-around;
+    }
+
+    #where1, #where2 {
+        margin: 0 40px;
+    }
+
+    #hautduaccesecole, #hautduaccesecole2 {
+        margin-bottom: 20px;
+    }
+
+    #blockactu, #blockemplois {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        margin-top: 20px;
+    }
+
+}
