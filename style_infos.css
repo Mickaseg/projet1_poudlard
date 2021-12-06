@@ -12,11 +12,11 @@
     .carte{
         width : 500px;
         height: 500px;
-        max-height: fit-content;
+        max-height: 500px;
     }
     .contenuInfos{
         width: 100%;
-        height: 100%;
+        
     }
     
 
@@ -29,9 +29,7 @@
 body{
     margin:0;
     padding:0;
-    
-    
-    
+      
     background-image: url("./assets_Infos/fond_infos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,6 +69,10 @@ body{
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
 
+    transition: all 100ms ease-out;
+}
+.carte:hover{
+    transform: scale(1.1);
 }
 
 .contenuArticle{
@@ -88,7 +90,7 @@ body{
    
    width: 15%;
    min-width: 100px;
-   max-width: 150px;
+   
    border-radius: 15px;
 }
 
@@ -100,10 +102,15 @@ body{
     opacity: 0.9;
     color: #e1e3e1;
     
+    
 }
-
+.reponse{
+    display: hidden;
+}
+/*
 span{
     font-style: italic;
-    margin-left: 10%;
-    width: 200px;
-}
+    background-color: #23282F;
+   
+    
+}*/
