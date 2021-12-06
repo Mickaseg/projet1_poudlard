@@ -50,10 +50,6 @@ body{
     padding:0px;
     
 }
-.titreArticle{
-    margin: 0;
-    font-size: 20px;
-}
 
 
 .carte{
@@ -74,6 +70,10 @@ body{
 .carte:hover{
     transform: scale(1.1);
 }
+.titreArticle{
+    margin: 0;
+    font-size: 20px;
+}
 
 .contenuArticle{
     
@@ -93,24 +93,36 @@ body{
    
    border-radius: 15px;
 }
-
+/* ************************** FAQ *************************/
 .faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     background-color: #23282f;
     opacity: 0.9;
     color: #e1e3e1;
     
     
 }
-.reponse{
-    display: hidden;
-}
-/*
-span{
-    font-style: italic;
-    background-color: #23282F;
-   
+
+.faqContainer{
     
-}*/
+    margin: 0 5%;
+    height: auto;
+}
+
+
+.faqContainerQuestion > p{
+    font-size: 30px;
+    font-style: normal; 
+
+}
+.faqContainerReponse > p {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 10%;
+}
+    
+.faqContent{
+   font-style: italic;
+    
+}
+
