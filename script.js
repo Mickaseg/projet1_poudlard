@@ -132,3 +132,11 @@ submit.addEventListener("click", function() {
 })
 
 // Fin de Partie de Yan
+
+//lyndia code//
+let d1 = document.getElementsByClassName("kiosque");
+let p1 = document.getElementById("p1");
+
+
+d1.addEventListener("mouseover", () => {p1.style.display = "block";});
+d1.addEventListener("mouseout", () => {p1.style.display = "none";});
