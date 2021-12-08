@@ -10,7 +10,7 @@ body{
     margin:0;
     padding:0;
       
-    background-image: url("./assets_Infos/fond_infos.jpg");
+    background-image: url("./assets_Infos/Fond_infos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 15px;
-    opacity: 0.9;
+    opacity: 0.95;
     height: 60px;
     padding:0px;
     
@@ -37,7 +37,7 @@ body{
     flex-direction: row;
     justify-content: start;
     margin: 0 auto;
-    opacity: 0.9;
+    opacity: 0.95;
     margin-bottom: 10px;
     background-color: #23282f;
     color: #e1e3e1;
@@ -75,7 +75,7 @@ body{
 .faq{
     
     background-color: #23282f;
-    opacity: 0.9;
+    opacity: 0.95;
     color: #e1e3e1;   
     
 }
