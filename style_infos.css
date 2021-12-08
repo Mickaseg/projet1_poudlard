@@ -108,21 +108,19 @@ body{
     margin: 0 5%;
     height: auto;
 }
+   
 
-
-.faqContainerQuestion > p{
+.faqContainerQuestion {
     font-size: 30px;
     font-style: normal; 
 
 }
-.faqContainerReponse > p {
+.faqContainerReponse {
+    display: none;
     font-size: 20px;
     font-style: italic;
     margin-left: 10%;
-}
-    
-.faqContent{
-   font-style: italic;
     
 }
 
+    
