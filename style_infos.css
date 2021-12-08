@@ -1,6 +1,6 @@
 
 
-
+/********************************* DESKTOP ****************************/
 @media  screen and (min-width: 850px) {
     .contenant{
         display: flex;
@@ -10,9 +10,15 @@
     }
     
     .carte{
-        width : 500px;
-        height: 500px;
-        max-height: 500px;
+        flex-direction: column;
+        width: 80%;
+        height: 300px;
+        
+    }
+    .vignette{
+        width:300px;
+        height:300px;
+
     }
     .contenuInfos{
         width: 100%;
@@ -21,7 +27,7 @@
     
 
 }    
-
+/**************************************************************************/
 .contenuInfos{
     position: absolute;
     top: 80px;
@@ -51,14 +57,13 @@ body{
     
 }
 
-
+/***************************************CARTE****************************/
 .carte{
     display: flex;
     flex-direction: row;
     justify-content: start;
     margin: 0 auto;
     opacity: 0.9;
-    max-height: 100px;
     margin-bottom: 10px;
     background-color: #23282f;
     color: #e1e3e1;
@@ -79,17 +84,16 @@ body{
     
     margin-left: 10px;
     margin-right: 10px;
-    overflow: clip;
+    overflow: auto;
 }
 
 .desciption{
     font-size: 15px;
 }
 .vignette{
-   height: auto;
+   height: 100px;
    
-   width: 15%;
-   min-width: 100px;
+   width: 100px;
    
    border-radius: 15px;
 }
@@ -98,20 +102,20 @@ body{
     
     background-color: #23282f;
     opacity: 0.9;
-    color: #e1e3e1;
-    
+    color: #e1e3e1;   
     
 }
 
 .faqContainer{
-    
+    padding:2%;
     margin: 0 5%;
     height: auto;
+    border:solid 5px #e1e3e1 ;    
 }
    
 
 .faqContainerQuestion {
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal; 
 
 }
@@ -120,7 +124,8 @@ body{
     font-size: 20px;
     font-style: italic;
     margin-left: 10%;
-    
+    margin-top: 5%;
+    border-left:solid 5px yellow;   
 }
 
     
