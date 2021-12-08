@@ -1,32 +1,6 @@
 
 
-/********************************* DESKTOP ****************************/
-@media  screen and (min-width: 850px) {
-    .contenant{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
-    }
-    
-    .carte{
-        flex-direction: column;
-        width: 80%;
-        height: 300px;
-        
-    }
-    .vignette{
-        width:300px;
-        height:300px;
 
-    }
-    .contenuInfos{
-        width: 100%;
-        
-    }
-    
-
-}    
 /**************************************************************************/
 .contenuInfos{
     position: absolute;
@@ -107,10 +81,12 @@ body{
 }
 
 .faqContainer{
-    padding:2%;
+    padding:1%;
     margin: 0 5%;
     height: auto;
-    border:solid 5px #e1e3e1 ;    
+    border:2mm ridge #23282f; 
+    border-radius: 15px;  
+    box-shadow: 5px 5px 5px black;
 }
    
 
@@ -121,11 +97,46 @@ body{
 }
 .faqContainerReponse {
     display: none;
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     margin-left: 10%;
-    margin-top: 5%;
-    border-left:solid 5px yellow;   
+    margin-top: 2%;
 }
 
+
     
+/********************************* DESKTOP ****************************/
+@media  screen and (min-width: 850px) {
+    .contenant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
+    .carte{
+        /*flex-direction: column;*/
+        width: 400px;
+        height: 300px;
+        
+    }
+
+    .vignette{
+        width:150px;
+        height:150px;
+        min-width: 150px;
+       
+    }
+    .contenuInfos{
+        width: 100%;
+        
+    }
+    .contenuArticle{
+        margin: 5%;
+    }
+    .titreArticle{
+        margin-bottom: 10px;
+    }
+    
+
+}    
