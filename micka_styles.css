@@ -39,10 +39,15 @@ h2{
   color: var(--dark-font-color);
   font-size: 2rem;
 }
+h3 {
+  font-size: 2rem;
+  font-family: var(--parag-font-family);
+}
 p{
   font-family: var(--parag-font-family);
   font-size: 1rem;
 }
+
 
  .school-main {
   position: absolute;
@@ -431,7 +436,7 @@ p{
     background-color: #90f1ef;
     background: url(images_school/abdous.png) no-repeat center;
   }
-  div.item-carousel:nth-of-type(1) > h2{
+  .item-carousel:nth-of-type(1) h2 {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -441,9 +446,21 @@ p{
     margin-right: 28px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   }
+  
   div.item-carousel:nth-of-type(2) {
     --offset: 2;
     background: url(images_school/abdous.png) no-repeat center;
+  }
+
+  div.item-carousel:nth-of-type(2) h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-right: 28px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   div.item-carousel:nth-of-type(3) {
     --offset: 3;
@@ -500,12 +517,100 @@ p{
 
   /* Footer */
 
-  footer {
-      height: 80px;
-      background-color: #23282f;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+    color: var(--or-color);
+    position: relative;
+    
   }
-
+  .footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
   
+  .footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .footer a {
+    text-decoration: none;
+    font-family: var(--parag-font-family);
+    color: var(--or-color);
+    font-size: 1rem;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #ff5722;
+  }
+  
+  .footer div:first-child {
+    padding-top: 4px;
+  }
+  
+  .footer div:last-child {
+    padding-top: 3px;
+  }
+  .footer-first,
+  .footer-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .logo-footer {
+    width: 80px;
+    margin: 20px;
+  }
+  
+  .footer-second {
+    position: relative;
+  }
+  
+  .footer-second::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: var(--or-color);
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .reseaux-sociaux-bloc {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .reseaux-sociaux-bloc a {
+    padding: 0 6px 0 6px;
+  }
+  
+  .fab i {
+    size: 25x;
+  }
+  
+  .fab {
+    -webkit-animation: rotate-center 7s linear infinite;
+    animation: rotate-center 7s linear infinite;
+  }
+  
+/* responsive */
 
   @media only screen and (min-width: 850px) {
 
@@ -573,15 +678,8 @@ animation: do-levitation 1.2s alternate ease-in-out infinite;
 #nav-bar-hamburger {
   display: none;
 }
-/* Cards */
 
-/* .wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-} */
-
+/* main */
 .school-header-container {
   margin-left: 10%;
   margin-right: 10%;
@@ -606,12 +704,42 @@ animation: do-levitation 1.2s alternate ease-in-out infinite;
   margin-left: 30%;
   margin-right: 30%;
 } 
-@media only screen and (min-width: 1300px){
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+
+/* footer */
+.footer-first {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* padding: 0 30px; */
 }
+.footer-div {
+  width: 30%;
+}
+
+.footer-second {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+}
+
+.footer-second p {
+  padding-bottom: 20px;
+}
+
+.logo-footer {
+  max-width: 100px;
+}
+.footer-second::before {
+  width: 400px;
+}
+
+}
+  @media only screen and (min-width: 1300px){
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
   }
