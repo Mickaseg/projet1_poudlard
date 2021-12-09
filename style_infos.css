@@ -85,6 +85,8 @@ body{
     border-radius: 10px;
     border: solid black 5px;
     color: #e1e3e1;
+    text-align: center;
+    margin:0 auto;
 }
 
 .faqContainer{

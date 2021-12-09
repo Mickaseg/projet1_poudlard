@@ -1,3 +1,5 @@
+/**************************DEROULEMENT FAQ***************************/
+
 const reponse = document.querySelectorAll('.faqContainerReponse');
 console.log(reponse);
 
@@ -12,7 +14,7 @@ container.forEach( element => element.addEventListener('click',function(){
        element.lastElementChild.style.display='none'
    }
 }))
-
+/****************************SEARCH BAR********************************/
 const champRecherche = document.querySelector('.faqSearchBar')
 /*console.log(champRecherche)*/
 const questions = document.querySelectorAll('.faqContainerQuestion')
@@ -20,13 +22,15 @@ const questions = document.querySelectorAll('.faqContainerQuestion')
 console.log(champRecherche.value)
 
 
+
 champRecherche.addEventListener('input',() => questions.forEach((question)=>{
     const tabQuestion = question.innerHTML.split(' ');
-    console.log(tabQuestion);
-    console.log(question)
- 
+     
     if (tabQuestion.some((element)=> element == champRecherche.value)){
         question.style.color='red'; 
+    }
+    else{
+        question.style.color='#e1e3e1'
     }
 }))
      
