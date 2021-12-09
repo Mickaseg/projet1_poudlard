@@ -80,6 +80,12 @@ body{
     margin-top: 15px;   
     
 }
+.faqSearchBar{
+    background-color: #23282f;
+    border-radius: 10px;
+    border: solid black 5px;
+    color: #e1e3e1;
+}
 
 .faqContainer{
     padding:1%;
