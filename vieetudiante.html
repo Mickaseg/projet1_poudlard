@@ -6,11 +6,11 @@
     <link rel="shortcut icon" type="image/png" href="http://y1n.fr/Favicon/HarryFavicon.ico"/> 
     <link rel="stylesheet" href="stylesvieetudiante.css">
     <link rel="stylesheet" href="stylesLeo.css">
+    <script src="https://kit.fontawesome.com/59ca6f73f8.js" crossorigin="anonymous"></script>
     <title>Poudlard | Vie étudiante</title>
 </head>
 <body>
   <header>
-    <header>
       <!------------------------------------- Début barre de navigation ----------------------------->
       <nav class="nav-bar">
         <!-- nav bar gauche -->
@@ -80,7 +80,7 @@
   </li>
 </ul>
   </header>
-  <main>
+  <main id="themain">
 
     <!-- Yan - La vie étudiante -->
 
@@ -155,7 +155,7 @@
                   <p>Maison : Serdaigle</p>
                   </div>
               </div>
-              <div class="livredor">
+              <div class="livredor" id="livredorbottom">
                 <p>Rajoutez votre avis :</p>
                   <input type="text" maxlength="200" size="200" placeholder="  Votre avis" id="livredortext"/>
                   <p>Prenom N :<input type="text" maxlength="10" size="15" placeholder=" Harry P" id="livredortextP"/> </p>
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-        <div id="accesalecole" class="sectionnav">
+        <div id="accesalecole" class="sectionnav" onmousedown="return false" onselectstart="return false">
           <div id="accesalecole2">
             <div id="actu2">
               <div id="actu">
@@ -195,15 +195,14 @@
         </div>
 
                         <!-- ************************* Offres d'emplois ************************************ -->
-        <div id="offresdemplois" class="sectionnav">
+        <div id="offresdemplois" class="sectionnav" onmousedown="return false" onselectstart="return false">
             <h2 class="actualiteh2">Ne sois pas timide<br> Postule !</h2>
             <div id="blockemplois">
             <div class="oldactu1">
               <div class="actu">
                 <div class="actuP0">
-                  <p>Section</p>
-                  <p></p>
-                  <p></p>
+                  <p>Lorem Ipsum</p>
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
                 </div>
               </div>
           </div>
@@ -211,11 +210,8 @@
             <div class="actu">
               
               <div class="actuP0">
-                <p>en cours</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
               </div>
             </div>
         </div>
@@ -223,20 +219,21 @@
           <div class="actu" class="actuEmploi">
         
             <div class="actuP0">
-              <p>de developpeement</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem ipsum dolor sit amet consectetur </p>
             </div>
           </div>
       </div>
         </div>
         </div>
       </div>
-        <div id="reseauxsociaux" class="sectionnav">
+        <div id="reseauxsociaux" class="sectionnav" onmousedown="return false" onselectstart="return false">
             <h2>Reseaux sociaux</h2>
             <div class="oldactu1">
               <div class="actu">
                 <img src="Assets/reaseauxsociauximg.jpg" title="BlackFriday" class="actu1Img"> 
                 <div id="actupReseauxSociaux" class="actuP">
-                  <p>En cours de création </p>
+                  <p>En cours de création // selon budget </p>
                   
                 </div>
               </div>
@@ -245,11 +242,12 @@
     </div>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-first">
       <div class="footer-div">
         <h3>Coordonnées</h3>
-        <p>Adresse</p>
+        <p>27 Rue du dragon</p>
+        <p>Highlands, Ecosse</p>
         <p>05 51 45 89 78</p>
         <p>pourdlard@sorcier.com</p>
       </div>
@@ -260,12 +258,17 @@
       </div>
       <div class="footer-div">
         <h3>Navigation</h3>
-        <a href="index.html">Home</a><a href="school.html">Ecole</a><a href="campushome.html">Campus</a><a href="formation.html">Programme</a><a href="event.html">Evenements</a><a href="vieetudiante.html">Vie Etudiante</a><a href="infos.html">Info</a>
+        <div class="footer-nav">
+        <div class="footer-nav1">
+        <a href="index.html">Home</a><a href="school.html">Ecole</a><a href="campushome.html">Campus</a></div>
+        <div class="footer-nav2"><a href="formation.html">Programme</a><a href="event.html">Evenements</a><a href="vieetudiante.html">Vie Etudiante</a>
+        </div>
+      </div><a class="footer-info" href="infos.html">Info</a>
       </div>
     </div>
     <div class="footer-second">
       <!-- <div class="copyrightfooter"></div> -->
-        <p class="footer-div">Copyright @ 2021</p>
+        <p class="footer-div">@ Poudlard School Copyright 2021</p>
         <img class="logo-footer footer-div" src="./img/logo_Ecole_Grand_Modele.png" title="logo">
         <div class="reseaux-sociaux-bloc footer-div">
           <a href="https://www.facebook.com/DanielRadcliffeNews/?hc_ref=ARQ1RnCu-aBHhLn8PH3xDGhRRYKgz5OXVm9j1yYX7JuxU5O4EmBXjIbjN2FPzzIP5Po&fref=nf&__tn__=kC-R"><i class="fab fa-facebook fa-2x"></i></a>
