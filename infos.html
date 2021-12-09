@@ -1,93 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_infos.css">
+    <link rel="stylesheet" href="stylesLeo.css" /> 
+    <script src="https://kit.fontawesome.com/59ca6f73f8.js" crossorigin="anonymous"></script>
+    
     <title>Informations Utiles</title>
 </head>
 <body>
-    <nav>
+       <!------------------------------------- Début barre de navigation ----------------------------->
+       <nav class="nav-bar">
+        <!-- nav bar gauche -->
+        <ul class="nav-bar-gauche">
+          <li class="nav-bar-liens"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-liens"><a href="campushome.html">Campus</a></li>
+          <li class="nav-bar-liens"><a href="formation.html">Programme</a></li>
+        </ul>
 
-    </nav>
-    <main>
-      <h1>Informations Utiles</h1>
+        <!-- logo -->
+        <a href="index.html"
+          ><img
+            class="nav-bar-logo levitate"
+            src="http://y1n.fr/Favicon/HarryFavicon.ico"
+            alt="logo de poudlard"
+        /></a>
+
+        <!-- hamburger -->
+        <div id="nav-bar-hamburger">
+          <div class="nav-bar-cont-lignes btn1">
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+          </div>
+        </div>
+        <!-- nav bar droite -->
+        <ul class="nav-bar-droite">
+          <li class="nav-bar-liens"><a href="event.html">Evenements</a></li>
+          <li class="nav-bar-liens">
+            <a href="vieetudiante.html">Vie Etudiante</a>
+          </li>
+          <li class="nav-bar-liens"><a href="infos.html">Info</a></li>
+        </ul>
+      </nav>
+      <!-- Menu telephone -->
+      <nav class="nav-bar-phone">
+        <ul class="nav-bar-phone-liste">
+          <li class="nav-bar-phone-items"><a href="index.html">Home</a></li>
+          <li class="nav-bar-phone-items"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-phone-items">
+            <a href="campushome.html">Campus</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="formation.html">Programme</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="event.html">Evenements</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="vieetudiante.html">Vie étudiante</a>
+          </li>
+          <li class="nav-bar-phone-items"><a href="infos.html">Info</a></li>
+        </ul>
+      </nav>
+<!-------------------------------- Fin Barre de navigation --------------------------------------------------->
+    <main class="contenuInfos">
+      <h2 class="titre">Informations Utiles</h2>
       <div class="contenant">
           <section>
-                <article>
-                  <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
-                  <div>
-                    <h2>Ou trouver sa baguettes ?</h2>
-                    <p class="desciption">Vous pouvez faire un tour du côté de chez Ollivander</p>
+                <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+                <article class="carte">
+                  <img class="vignette" src="./assets_Infos/Baquettes.jpg" alt="ollivander">
+                  <div class="contenuArticle">
+                    <h3 class="titreArticle">Ou trouver sa baguettes ?</h3>
+                    <p class="desciption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate soluta modi, eaque voluptatibus repellendus ab dolore delectus amet minima architecto ullam perferendis magni accusamus? Accusantium nisi laudantium eius nemo.</p>
                   </div>
                 </article>
+                </a>
             </section>
             <section>
-              <article>
-                <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
-                <div>
-                  <h2>Ou trouver ses livres ?</h2>
-                  <p class="desciption">Passez pas Obscurus Book, les livres les plus rechercher et rare s'y trouvent.</p>
+              <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+              <article class="carte">
+                <img class="vignette" src="./assets_Infos/livres.jpg" alt="Obscurus">
+                <div class="contenuArticle">
+                  <h3 class="titreArticle">Ou trouver ses livres ?</h3>
+                  <p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsa at asperiores temporibus dicta id reprehenderit esse odit atque omnis? Natus deleniti nam et. Cum aut perferendis ut iure tempora!</p>
                 </div>
               </article>
+              </a>
           </section>
           <section>
-            <article>
-              <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
-              <div>
-                <h2>Ou trouver son balais</h2>
-                <p class="desciption">Allez voir la boutique d'article de quidditch, vous trouvez aussi des balais de compétition.</p>
+            <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+            <article class="carte">
+              <img class="vignette" src="./assets_Infos/balais.jpg" alt="boutique de balais">
+              <div class="contenuArticle">
+                <h3 class="titreArticle">Ou trouver son balais</h3>
+                <p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum, itaque aliquid nemo nesciunt assumenda odit vel porro aperiam dignissimos ad fugit fugiat! Quam nulla error autem iusto. Alias, mollitia?</p>
               </div>
             </article>
+            </a>
           </section>
       </div>
-    <h1>A découvrir</h1>
+    <h2 class="titre">A découvrir</h2>
       <div class="contenant"> 
         <section>
-              <article>
-                <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
-                <div>
-                  <h2>Le bar a cuda</h2>
-                  <p class="desciption">Une grande soif, pas de problème ici vous ne repartez pas sans voir double</p>
+          <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+              <article class="carte">
+                <img class="vignette" src="./assets_Infos/bar.jpg" alt="Le bar a cuda">
+                <div class="contenuArticle">
+                  <h3 class="titreArticle">Le bar a cuda</h3>
+                  <p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati officiis enim, praesentium, a, repudiandae suscipit ex at reiciendis pariatur similique. Tempore odio nemo, officiis distinctio veniam totam aperiam obcaecati?</p>
                 </div>
               </article>
+          </a>
           </section>
           <section>
-            <article>
-              <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
-              <div>
-                <h2>Discothèque</h2>
-                <p class="desciption">Dansez jusqu'a pas d'heures ici, attention aux oreilles le son est plutôt fort !</p>
+            <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+            <article class="carte">
+              <img class="vignette" src="./assets_Infos/discotheque.jpg" alt="Discothèque">
+              <div class="contenuArticle">
+                <h3 class="titreArticle">Discothèque</h3>
+                <p class="desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo, vero quae minus nisi nulla! Distinctio ipsa nam ex vel explicabo corporis, laboriosam odit cumque ipsum excepturi, quia repellat recusandae!</p>
               </div>
             </article>
+            </a>
         </section>
         <section>
-          <article>
-            <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
-            <div>
-              <h2>Le park</h2>
-              <p class="desciption">Pour faire des heures de ballade, courrir un peu ou se détendre avec les oiseaux!</p>
-            </div>
-          </article>
+
+         <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=5s">
+            <article class="carte">
+              <img class="vignette" src="./assets_Infos/park.jpg" alt="Park">
+              <div class="contenuArticle">
+                <h3 class="titreArticle">Park</h3>
+                <p class="desciption">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nostrum exercitationem reprehenderit accusantium veniam consequatur rerum? Sint, veniam illo! Sit animi ipsum quidem illum! Velit sequi repudiandae reiciendis cum impedit?!</p>
+              </div>
+            </article>
+            </a>
       </section>
     </div>
-    <h1>FAQ</h1>
+    <h2 class="titre">FAQ</h2>
     <section class="faq">
-      <details>
-        <summary>Question 1</summary>
-        Réponse 1
-      </details>
-      <details>
-        <summary>Question 2</summary>
-        Réponse 2
-      </details>
-      <details>
-        <summary>Question 3</summary>
-        Réponse 3
-      </details>
+      <input class="faqSearchBar" type="search" size="30" placeholder="Que souhaitez vous cherchez ?">
+      <div class="faqGrandContainer">
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Comment réussir ses premiers sorts ?</p>
+          <p class="faqContainerReponse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus totam libero est exercitationem ducimus vero! Similique soluta reprehenderit enim minima voluptate facilis sit distinctio numquam earum quo nisi, assumenda natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Comment bien choisir son balais ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsam cum ratione explicabo tempora reprehenderit voluptates facilis quas voluptatem officia perferendis sequi quae, ducimus quam nulla labore totam fugiat tenetur! sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Quels livres devez vous achetez ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Suis-je eligible à une bourse d'étude ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">J'aime pas la magie suis-je normal ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Tout le monde dis que je suis très très méchant , que faire ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Quels diplomes obtient t'on en fin de cursus ?</p>
+          <p class="faqContainerReponse">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni facere quae minima temporibus, eligendi nam laborum consectetur id magnam animi reiciendis facilis voluptas, aspernatur iste aperiam eum, veniam iusto vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Comment réussir sa rentrée ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-first">
+          <div class="footer-div">
+            <h3>Coordonnées</h3>
+            <p>Adresse</p>
+            <p>05 51 45 89 78</p>
+            <p>pourdlard@sorcier.com</p>
+          </div>
+          <div class="footer-div">
+            <h3>S'engager</h3>
+            <a href="#">Devenir Professeur</a>
+            <a href="#">Devenir élève</a>
+          </div>
+          <div class="footer-div">
+            <h3>Navigation</h3>
+            <a href="index.html">Home</a><a href="school.html">Ecole</a><a href="campushome.html">Campus</a><a href="formation.html">Programme</a><a href="event.html">Evenements</a><a href="vieetudiante.html">Vie Etudiante</a><a href="infos.html">Info</a>
+          </div>
+        </div>
+        <div class="footer-second">
+          <!-- <div class="copyrightfooter"></div> -->
+            <p class="footer-div">Copyright @ 2021</p>
+            <img class="logo-footer footer-div" src="./img/logo_Ecole_Grand_Modele.png" title="logo">
+            <div class="reseaux-sociaux-bloc footer-div">
+              <a href="https://www.facebook.com/DanielRadcliffeNews/?hc_ref=ARQ1RnCu-aBHhLn8PH3xDGhRRYKgz5OXVm9j1yYX7JuxU5O4EmBXjIbjN2FPzzIP5Po&fref=nf&__tn__=kC-R"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://www.instagram.com/poudlard__fr/?hl=fr"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://twitter.com/Poudlard_fr"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="https://github.com/Mickaseg/projet1_poudlard"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+          </div>
+  
+    </footer>
+      
     </section>
     </main>
+    
+    <script src="script.js"></script>
+    <script src="infos.js"></script>
     
 </body>
 </html>
