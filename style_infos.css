@@ -21,9 +21,8 @@ body{
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
-    
+    font-size: 40px;
     opacity: 0.95;
-    height: 60px;
     padding:0px;       
 }
 
@@ -172,4 +171,3 @@ body{
     }
     
 
-}    
