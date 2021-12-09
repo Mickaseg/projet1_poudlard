@@ -11,6 +11,11 @@ btnNavHamb.addEventListener('click', () => {
     body.classList.toggle('phoneScrollStop')
 })
 
+
+// const bntNewsletter = document.querySelector('.index-newsletter input[type="submit"]')
+// const indexForm = document.querySelector('.index-newsletter-box form')
+// indexForm.addEventListener('load', e => e.preventDefault())
+
 // Animation revélation de div  (660px point de rupture)
 const ratio = .1
 const options ={
@@ -31,8 +36,6 @@ const observer = new IntersectionObserver(affichage, options)
 document.querySelectorAll('.reveal-left, .reveal-right').forEach(function(r) {
     observer.observe(r)
 })
-
-
 
 // Partie de Yan - Debut
 // Yan Menu deroulant mobile
