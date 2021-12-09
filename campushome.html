@@ -69,6 +69,7 @@
         </ul>
       </nav>
 <!-------------------------------- Fin Barre de navigation --------------------------------------------------->
+  <main class="campus">   
     <video autoplay muted loop id="starvideo">
       <source src="videos/stargold.mp4" type="video/mp4">
     </video>
@@ -78,39 +79,68 @@
       <div>
         <img class="campusImg" src="images/plancampus.jpeg">
       </div> 
+
   <section class="globalCard">
     <div class="kiosque">
-      <button class="cardButton">
-        <img class="cardImg" src="images/pensionnat.jpeg">
-        <h2 class="h2campus">Pensionnat</h2>
-        <p class="pcampus">Découvrez nos offres de pension au sein de nos maisons.</p>
-        <p id="p1" class="hide">Ce deuxième paragraphe également</p>
+      <button id="roomButton" class="cardButton"  onclick="myFunction1()">
+          <img class="cardImg" src="images/pensionnat.jpeg">
+          <h2 class="h2campus">Pensionnat</h2>
+          <p class="pcampus">Découvrez nos offres de pension au sein de nos maisons.</p>
       </button>
     </div>
     <div class="kiosque">
-      <button class="cardButton">
+      <button class="cardButton" id="libraryButton"  onclick="myFunction2()">
         <img class="cardImg" src="images/bibliotheque.jpeg">
         <h2 class="h2campus"> Bibliothèque</h2>
         <p class="pcampus">Venez profitez de notre merveilleuse collection de livres et plus encore...</p>
       </button>
     </div>
     <div class="kiosque">
-      <button class="cardButton">
+      <button class="cardButton" id="restoButton" onclick="myFunction3()">
         <img class="cardImg" src="images/salle-commune.jpeg">
         <h2 class="h2campus">Restauration</h2>
         <p class="pcampus">Dans un cadre charmant, dégustez les plats de notre nouveau Chef !</p>
       </button>
+      
     </div>
     <div class="kiosque">
-      <button class="cardButton">
+      <button class="cardButton" id="clubButton"  onclick="myFunction4()">
         <img class="cardImg" src="images/chateau-plan.jpeg">
         <h2 class="h2campus">Les Club du Campus</h2>
         <p class="pcampus">Quel cercle étudiants rejoindrez-vous ?</p>
       </button>
     </div>
-       
   </section>
-   
+  <section id="page">
+    <div id="infoRoom">
+      <div class="infoCard">
+        <h2 class="infoTitle">Envie de passer votre année scolaire avec nous...</h2>
+        <p class="infoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias quos neque vero. Eligendi, aperiam enim totam amet voluptas recusandae perferendis voluptate odit eveniet nesciunt asperiores sapiente magni ullam eos?</p>
+      </div>
+    </div>
+    <div id="infoLibrary" >
+      <div class="infoCard">
+        <h2 class="infoTitle">Le silence est roi mais le savoir est dieu..</h2>
+        <p class="infoText"></p>
+      </div>
+    </div>
+    <div id="infoResto" >
+      <div class="infoCard">
+        <h2 class="infoTitle">Une année d'exeption pour vos papilles</h2>
+        <p class="infoText"></p>
+      </div>
+    </div>
+    <div id="infoClub">
+      <div class="infoCard">
+        <h2 class="infoTitle">Epanouissez avec notre panel d'activités!</h2>
+        <p class="infoText"></p>
+      </div>
+    </div>
+  </section>
+  
+       
+  
+  </main>  
     <footer class="footer"><h1>Yo c'est oim le footer</h1></footer>
     </div>
     <script src="script.js"></script>

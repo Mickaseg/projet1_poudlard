@@ -273,13 +273,7 @@ a{
   bottom: 0;
   z-index: -1;
 }
-.mainCampus {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 
 .globalCard {
@@ -304,32 +298,18 @@ a{
   box-shadow: 0px 6px 8px rgb(70, 63, 63);
   border-radius: 8px;
 }
-
-/* .campusButton {
-  width: 250px;
-  height: 350px;
-  margin: 10px 30px;
-  border-radius: 8px;
-} */
 .kiosque {
-  display: column;
   width: 250px;
-  height: 350px;
+  height: 100%;
   background-color: whitesmoke;
   margin: 20px 30px;
   box-shadow: 0px 2px 8px grey;
-  border-radius: 8px;
   opacity: 0.0 - 1.0;
-  
+  border-radius: 8px; 
 }
 .cardButton {
   border-radius: 8px;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.95);
-  border: 1px solid white;
-  transition: 0.3s all ease-in-out;
-  }
-
+}
 .cardImg {
   width: 250px;
   height: 210px;
@@ -339,12 +319,46 @@ a{
 .h2campus {
   line-height: .8;
   font-size: 35px;
-  margin: 10px 10px;
+  padding: 10px 10px;
   color: goldenrod;
 }
 .pcampus {
+  padding: 10px 10px;
   font-size: 18px;
-  margin: 10px 10px;
+  font-family: 'Roboto', sans-serif;
+}
+.infoCard{
+  width: 1050px;
+  height: auto;
+  background-color: whitesmoke;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+#infoRoom{
+  display: none;
+}
+#infoLibrary{
+  display: none;
+}
+#infoResto{
+  display: none;
+}
+#infoClub{
+  display: none;
+}
+@media screen and (max-windth: 850px) {
+  .infoCard{
+    width: 600px;
+  }
+  .mainCampus{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
 }
 .footer{
   padding: 40px;

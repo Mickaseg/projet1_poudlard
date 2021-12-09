@@ -39,7 +39,7 @@ document.querySelectorAll('.reveal-left, .reveal-right').forEach(function(r) {
 
 const menuderoulant = document.getElementById("navbar")
 const wrap = document.getElementById("buttonnav")
-const contenue = document.getElementById("contenuei")
+const contenuei = document.getElementById("contenuei")
 contenuei.style.display = "block"
 
 li1.addEventListener("click", function(){ 
@@ -134,9 +134,28 @@ submit.addEventListener("click", function() {
 // Fin de Partie de Yan
 
 //lyndia code//
-let d1 = document.getElementsByClassName("kiosque");
-let p1 = document.getElementById("p1");
 
-
-d1.addEventListener("mouseover", () => {p1.style.display = "block";});
-d1.addEventListener("mouseout", () => {p1.style.display = "none";});
+function myFunction1() {
+    document.getElementById("infoRoom").style.display = "block";
+    document.getElementById("infoLibrary").style.display = "none";
+    document.getElementById("infoResto").style.display = "none";
+    document.getElementById("infoClub").style.display = "none";
+}
+function myFunction2() {
+  document.getElementById("infoRoom").style.display = "none";
+  document.getElementById("infoLibrary").style.display = "block";
+  document.getElementById("infoResto").style.display = "none";
+  document.getElementById("infoClub").style.display = "none";
+}
+function myFunction3() {
+  document.getElementById("infoRoom").style.display = "none";
+  document.getElementById("infoLibrary").style.display = "none";
+  document.getElementById("infoResto").style.display = "block";
+  document.getElementById("infoClub").style.display = "none";
+}
+function myFunction4() {
+  document.getElementById("infoRoom").style.display = "none"; 
+  document.getElementById("infoLibrary").style.display = "none";
+  document.getElementById("infoResto").style.display = "none";
+  document.getElementById("infoClub").style.display = "block";
+} 
