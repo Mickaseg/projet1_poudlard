@@ -350,7 +350,7 @@ a{
 }
 @media screen and (max-windth: 850px) {
   .infoCard{
-    width: 600px;
+    width: 400px;
   }
   .mainCampus{
       position: absolute;
