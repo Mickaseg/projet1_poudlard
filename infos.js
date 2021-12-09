@@ -21,11 +21,12 @@ console.log(champRecherche.value)
 
 
 champRecherche.addEventListener('input',() => questions.forEach((question)=>{
-    const tabQuestion = question.split(" ");  
-    console.log(tabQuestion)
- /*console.log(`La question ${question.innerHTML} Valeur du champ de recherche ${champRecherche.value}`) */
-    if (tabQuestion.innerHTML.some((element)=> element ==champRecherche.value)){
+    const tabQuestion = question.innerHTML.split(' ');
+    console.log(tabQuestion);
+    console.log(question)
+ 
+    if (tabQuestion.some((element)=> element == champRecherche.value)){
         question.style.color='red'; 
     }
-}
+}))
      
