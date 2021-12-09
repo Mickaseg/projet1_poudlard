@@ -1,15 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap');
 
-.school-main {
-  margin: 0;
-  padding: 0;
-  color: #23282f;
-  background: url(images_school/header.jpg) no-repeat center fixed;
-  background-size: cover;
-  position: absolute;
-  top: 80px;
+@font-face {
+  font-family: 'harry_pregular';
+  src: url('font/harryp__-webfont.eot');
+  src: url('font/harryp__-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/harryp__-webfont.woff2') format('woff2'),
+       url('font/harryp__-webfont.woff') format('woff'),
+       url('font/harryp__-webfont.ttf') format('truetype'),
+       url('font/harryp__-webfont.svg#harry_pregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+:root {
+  --main-bg-color: #231e4e; /* (VIOLET)  */
+  --secondary-bg-color: #23282F; /* (GRIS)  */
+  --third-bg-color: #F7FFF7; /* (BLANC)  */
+  --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
+  --or-color: #ffc107
+
+  --light-font-color: #f1f1f1;
+  --dark-font-color: #23282F;
+  
+  --title-font-family: 'harry_pregular', serif;
+  --sous-titre-font-family: 'MonteCarlo', cursive;
+  --parag-font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: var(--title-font-family);
+  font-size: 4rem;
+  z-index: 1;
+  line-height: 105%;
+}
+
+h2{
+  font-family: var(--sous-titre-font-family);
+  color: var(--dark-font-color);
+  font-size: 2rem;
+}
+p{
+  font-family: var(--parag-font-family);
+  font-size: 1rem;
+}
+
+ .school-main {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+} 
+
+
+
 #school-body {
+  margin: 0;
+  padding: 0;
+  /* color: #23282f; */
+  background: url(images_school/header.jpg) no-repeat center fixed ;
+  background-size: cover;
+  
   margin: 0;
   width: 100%;
 }
@@ -196,81 +245,100 @@
   position: fixed;
   width: 100%;
 }
+
 /* Header */
+#school-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  font-family: var(--title-font-family);
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#school-header >.image-parchemin {
+  z-index: 0;
+  position: absolute;
+  width: 95%;
+  max-height: 400px;
+  /* margin-left: 10%;
+  margin-right: 5%; */
+}
 
 .school-header-container {
-  padding: 10px;
-  height: 350px;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  background-color: #f1f1f1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 16px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  font-size: 1em;
   border-radius: 10px;
-  border: 10px;
-  padding: 10px;
-  text-align: left;
+  text-align: center;
   line-height: 150%;
+  opacity: 0.9;
 }
 
 .school-header-container > h1 {
+  width: 70%;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
-
-.school-hr {
-  margin: 16px;
+.about-poudlard {
+  background-color: var(--third-bg-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-bottom: 2px;
 }
-
-/* Houses title */
+/* Houses  */
 
 .houses_title_container {
+  padding: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
   background-color: #f1f1f1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 16px;
   border-radius: 10px;
-  border: 10px;
-  padding: 10px;
+  text-align: center;
+  opacity: 0.9;
+
 }
-.houses-title > h1 {
-    margin-top: 10px;
-    margin-left: 2px;
-    font-weight: bold;
+.houses_title_container h1 {
+  margin: 0; 
 }
-.houses-title {
-  display: flex;
-}
-.image_maisons {
-  width: 15%;
-}
+
 
 /* Houses' grid */
 
-.houses-span > span {
+.houses-span {
   font-style: italic;
-  text-align: left;
+  font-weight: bold;
+  text-align: center;
 }
 
 .wrapper {
   justify-content: center;
   padding: 30px;
   display: grid;
+  margin-top: 100px;
 }
 
 .cards {
   margin-bottom: 50px;
   height: 250px;
   width: 250px;
-
-  /* border-style: outset; */
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
 
 .cards:hover {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .front {
@@ -278,7 +346,6 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  text-align: center;
   background: transparent;
 }
 
@@ -294,7 +361,10 @@
   border-radius: 10px;
 }
 
-.back > p {
+.back h2 {
+  margin: 5px;
+}
+.back  p {
   font-size: 14px;
 }
 
@@ -304,15 +374,17 @@
  /* Carousel */
 
 .carousel-title {
-  
     text-align: center;
-    padding: 1px;
     background-color: #f1f1f1;
-    margin: 10px;
+    margin-left: 10%; 
+    margin-right: 10%; 
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.carousel-title h2 {
+  font-size: 3rem;
+  margin: 5px;
+}
  .carousel-container {
     width: 100%;
     height: 600px;
@@ -357,7 +429,6 @@
   div.item-carousel:nth-of-type(1) {
     --offset: 1;
     background-color: #90f1ef;
-    
     background: url(images_school/abdous.png) no-repeat center;
   }
   div.item-carousel:nth-of-type(1) > h2{
@@ -434,10 +505,14 @@
       background-color: #23282f;
   }
 
+  
+
   @media only screen and (min-width: 850px) {
 
-.school-main {
-  padding: 100px;
+h1 {
+  font-size: 5rem;
+  line-height: 105%;
+  letter-spacing: 3px;
 }
 
  /* barre de navigation  */
@@ -480,7 +555,7 @@
   /* height: calc(100vh - 80px); */
 }
 
-/* Animation lévitatiton */
+/* Animation lévitatation */
 
 @keyframes do-levitation {
 0% {
@@ -498,5 +573,45 @@ animation: do-levitation 1.2s alternate ease-in-out infinite;
 #nav-bar-hamburger {
   display: none;
 }
+/* Cards */
 
+/* .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+} */
+
+.school-header-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.5rem;
+  margin-top: 3%;
+  margin-bottom: 100px;
+}
+
+ .houses_title_container {
+  margin-left: 30%;
+  margin-right: 30%;
+} 
+
+
+
+.image_maisons {
+  width: 15%;
+}
+
+ .carousel-title {
+  margin: 0;
+  margin-left: 30%;
+  margin-right: 30%;
+} 
+@media only screen and (min-width: 1300px){
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
   }
