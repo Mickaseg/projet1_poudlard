@@ -260,6 +260,10 @@ border-radius: 5px;
     
 }
 
+#livredorbottom {
+    margin-bottom: 40px;
+}
+
 #livredorsubmit:hover {
     background-color: #23282f;
     color: white;
@@ -297,6 +301,10 @@ border-radius: 5px;
 
 #where1, #where2 {
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #accealecole2 {
@@ -337,7 +345,6 @@ border-radius: 5px;
 #actuacces {
     width: 270px;
     height: 300px;
-    margin-bottom: 20px;
 }
 
 #actuacces, .gmap_canvas {
@@ -361,17 +368,13 @@ border-radius: 5px;
     height: 200px
 }
 .actuP0 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;;
+    height: 80px;
 }
-        
-.actuP1 { grid-area: 1 / 1 / 2 / 2; }
-.actuP2 { grid-area: 1 / 3 / 2 / 4; }
-.actuP3 { grid-area: 2 / 1 / 3 / 3; }
-.actuP4 { grid-area: 3 / 1 / 4 / 2; }
+
 
 
 /* *************  Reseau sociaux ********* */
@@ -429,7 +432,11 @@ border-radius: 5px;
 
     #where1, #where2 {
         margin: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
 
     #hautduaccesecole, #hautduaccesecole2 {
         margin-bottom: 20px;
