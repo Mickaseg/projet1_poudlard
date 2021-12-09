@@ -353,7 +353,7 @@ a {
 }
 
 /* Temoignages  */
-h2 {
+.mainBloc h2 {
   text-align: center;
   font-size: 2.2em;
   padding-top: 25px;
