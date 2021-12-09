@@ -303,6 +303,7 @@ p {
 
 .houses_title_container {
   padding: 10px;
+  
   margin-left: 20%;
   margin-right: 20%;
   background-color: #f1f1f1;
@@ -325,13 +326,12 @@ p {
 
 .wrapper {
   justify-content: center;
-  padding: 30px;
   display: grid;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .cards {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   height: 250px;
   width: 250px;
   transform-style: preserve-3d;
@@ -370,7 +370,17 @@ p {
 .back p {
   font-size: 18px;
 }
-
+.liserai {
+  width: 60%;
+  padding-left: 20%;
+  
+  max-height: 200px;
+}
+.liserai2 {
+  width: 60%;
+  max-height: 150px;
+  padding-left: 20%;
+}
 /* Carousel */
 
 .carousel-title {
@@ -746,7 +756,10 @@ input:nth-of-type(5):checked ~ div#carousel {
     margin-left: 30%;
     margin-right: 30%;
   }
+.houses_title_container {
+  margin-top: 80px;
 
+}
   /* footer */
 
   .footer-first {
@@ -797,6 +810,7 @@ input:nth-of-type(5):checked ~ div#carousel {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 100px;
   }
 
   h1 {
