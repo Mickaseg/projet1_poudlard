@@ -5,89 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_infos.css">
+    <link rel="stylesheet" href="stylesLeo.css" /> 
+    
     <title>Informations Utiles</title>
 </head>
 <body>
-    <nav>
+       <!------------------------------------- Début barre de navigation ----------------------------->
+       <nav class="nav-bar">
+        <!-- nav bar gauche -->
+        <ul class="nav-bar-gauche">
+          <li class="nav-bar-liens"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-liens"><a href="campushome.html">Campus</a></li>
+          <li class="nav-bar-liens"><a href="formation.html">Programme</a></li>
+        </ul>
 
-    </nav>
-    <main>
-      <h1>Informations Utiles</h1>
+        <!-- logo -->
+        <a href="index.html"
+          ><img
+            class="nav-bar-logo levitate"
+            src="http://y1n.fr/Favicon/HarryFavicon.ico"
+            alt="logo de poudlard"
+        /></a>
+
+        <!-- hamburger -->
+        <div id="nav-bar-hamburger">
+          <div class="nav-bar-cont-lignes btn1">
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+          </div>
+        </div>
+        <!-- nav bar droite -->
+        <ul class="nav-bar-droite">
+          <li class="nav-bar-liens"><a href="event.html">Evenements</a></li>
+          <li class="nav-bar-liens">
+            <a href="vieetudiante.html">Vie Etudiante</a>
+          </li>
+          <li class="nav-bar-liens"><a href="infos.html">Info</a></li>
+        </ul>
+      </nav>
+      <!-- Menu telephone -->
+      <nav class="nav-bar-phone">
+        <ul class="nav-bar-phone-liste">
+          <li class="nav-bar-phone-items"><a href="index.html">Home</a></li>
+          <li class="nav-bar-phone-items"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-phone-items">
+            <a href="campushome.html">Campus</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="formation.html">Programme</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="event.html">Evenements</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="vieetudiante.html">Vie étudiante</a>
+          </li>
+          <li class="nav-bar-phone-items"><a href="infos.html">Info</a></li>
+        </ul>
+      </nav>
+<!-------------------------------- Fin Barre de navigation --------------------------------------------------->
+    <main class="contenuInfos">
+      <h2 class="titre">Informations Utiles</h2>
       <div class="contenant">
           <section>
-                <article>
-                  <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
-                  <div>
-                    <h2>Ou trouver sa baguettes ?</h2>
+                <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+                <article class="carte">
+                  <img class="vignette" src="./assets_Infos/Baquettes.jpg" alt="ollivander">
+                  <div class="contenuArticle">
+                    <h3 class="titreArticle">Ou trouver sa baguettes ?</h3>
                     <p class="desciption">Vous pouvez faire un tour du côté de chez Ollivander</p>
                   </div>
                 </article>
+                </a>
             </section>
             <section>
-              <article>
-                <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
-                <div>
-                  <h2>Ou trouver ses livres ?</h2>
+              <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+              <article class="carte">
+                <img class="vignette" src="./assets_Infos/livres.jpg" alt="Obscurus">
+                <div class="contenuArticle">
+                  <h3 class="titreArticle">Ou trouver ses livres ?</h3>
                   <p class="desciption">Passez pas Obscurus Book, les livres les plus rechercher et rare s'y trouvent.</p>
                 </div>
               </article>
+              </a>
           </section>
           <section>
-            <article>
-              <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
-              <div>
-                <h2>Ou trouver son balais</h2>
+            <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+            <article class="carte">
+              <img class="vignette" src="./assets_Infos/balais.jpg" alt="boutique de balais">
+              <div class="contenuArticle">
+                <h3 class="titreArticle">Ou trouver son balais</h3>
                 <p class="desciption">Allez voir la boutique d'article de quidditch, vous trouvez aussi des balais de compétition.</p>
               </div>
             </article>
+            </a>
           </section>
       </div>
-    <h1>A découvrir</h1>
+    <h2 class="titre">A découvrir</h2>
       <div class="contenant"> 
         <section>
-              <article>
-                <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
-                <div>
-                  <h2>Le bar a cuda</h2>
+          <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+              <article class="carte">
+                <img class="vignette" src="./assets_Infos/bar.jpg" alt="ollivander">
+                <div class="contenuArticle">
+                  <h3 class="titreArticle">Le bar a cuda</h3>
                   <p class="desciption">Une grande soif, pas de problème ici vous ne repartez pas sans voir double</p>
                 </div>
               </article>
+          </a>
           </section>
           <section>
-            <article>
-              <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
-              <div>
-                <h2>Discothèque</h2>
+            <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+            <article class="carte">
+              <img class="vignette" src="./assets_Infos/discotheque.jpg" alt="Obscurus">
+              <div class="contenuArticle">
+                <h3 class="titreArticle">Discothèque</h3>
                 <p class="desciption">Dansez jusqu'a pas d'heures ici, attention aux oreilles le son est plutôt fort !</p>
               </div>
             </article>
+            </a>
         </section>
         <section>
-          <article>
-            <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
-            <div>
-              <h2>Le park</h2>
-              <p class="desciption">Pour faire des heures de ballade, courrir un peu ou se détendre avec les oiseaux!</p>
+          <a href="https://www.youtube.com/watch?v=Y5zbaF097lQ&t=7s">
+          <article class="carte">
+            <img class="vignette" src="./assets_Infos/park.jpg" alt="boutique de balais">
+            <div class="contenuArticle">
+              <h3 class="titreArticle">Le park</h3>
+              <p class="description">Pour faire des heures de ballade, courrir un peu ou se détendre avec les oiseaux!</p>
             </div>
           </article>
+          </a>
       </section>
     </div>
-    <h1>FAQ</h1>
+    <h2 class="titre">FAQ</h2>
     <section class="faq">
-      <details>
-        <summary>Question 1</summary>
-        Réponse 1
-      </details>
-      <details>
-        <summary>Question 2</summary>
-        Réponse 2
-      </details>
-      <details>
-        <summary>Question 3</summary>
-        Réponse 3
-      </details>
+      <div class="faqGrandContainer">
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Comment réussir ses premiers sorts ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Comment bien choisir son balais ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Quels livres devez vous achetez ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">Suis-je eligible à une bourse d'étude ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+        <div class="faqContainer">
+          <p class="faqContainerQuestion">J'aime pas la magie suis-je normal ?</p>
+          <p class="faqContainerReponse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam.</p>
+        </div>
+      </div>
+      
     </section>
     </main>
+    <script src="script.js"></script>
+    <script src="infos.js"></script>
     
 </body>
 </html>

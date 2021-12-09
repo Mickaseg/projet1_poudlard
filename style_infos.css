@@ -1,44 +1,61 @@
-@media  screen and (min-width = 1024px) {
-    .contenant{
-        flex-direction: row;
 
+
+
+@media  screen and (min-width: 850px) {
+    .contenant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
     }
     
+    .carte{
+        width : 500px;
+        height: 500px;
+        max-height: 500px;
+    }
+    .contenuInfos{
+        width: 100%;
+        
+    }
+    
+
+}    
+
+.contenuInfos{
+    position: absolute;
+    top: 80px;
 }
 body{
     margin:0;
     padding:0;
-
-    background-image: url("./assets/fond_infos.jpg");
+      
+    background-image: url("./assets_Infos/fond_infos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
-h1{
+
+.titre{
     color: #e1e3e1;
     text-align: center;
     background-color: #23282f;
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    height: 60px;
+    padding:0px;
     
 }
-h2{
-    margin: 0;
-    text-size-adjust: ;
-    font-size: medium;
-}
-nav{
-    height: 100px;
-    background-color: #23282f;
-}
 
-article{
+
+.carte{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    width: 70%;
     margin: 0 auto;
     opacity: 0.9;
     max-height: 100px;
@@ -48,29 +65,62 @@ article{
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
 
+    transition: all 100ms ease-out;
+}
+.carte:hover{
+    transform: scale(1.1);
+}
+.titreArticle{
+    margin: 0;
+    font-size: 20px;
 }
 
-article > div{
+.contenuArticle{
     
     margin-left: 10px;
     margin-right: 10px;
+    overflow: clip;
 }
 
-
+.desciption{
+    font-size: 15px;
+}
 .vignette{
    height: auto;
    
    width: 15%;
    min-width: 100px;
-   max-width: 150px;
+   
    border-radius: 15px;
 }
-
+/* ************************** FAQ *************************/
 .faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     background-color: #23282f;
     opacity: 0.9;
     color: #e1e3e1;
+    
+    
 }
+
+.faqContainer{
+    
+    margin: 0 5%;
+    height: auto;
+}
+   
+
+.faqContainerQuestion {
+    font-size: 30px;
+    font-style: normal; 
+
+}
+.faqContainerReponse {
+    display: none;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 10%;
+    
+}
+
+    
