@@ -38,7 +38,8 @@ h1 {
 h2 {
   font-family: var(--sous-titre-font-family);
   color: var(--dark-font-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
 }
 h3 {
   font-size: 2rem;
@@ -334,12 +335,13 @@ p {
   height: 250px;
   width: 250px;
   transform-style: preserve-3d;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .cards:hover {
   transform: rotateY(180deg);
   cursor: pointer;
+  height: 400px;
 }
 
 .front {
@@ -366,7 +368,7 @@ p {
   margin: 5px;
 }
 .back p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Carousel */
@@ -382,7 +384,6 @@ p {
 }
 .carousel-title h1 {
   padding: 10px;
-  
 }
 .carousel-container {
   width: 100%;
@@ -660,7 +661,7 @@ input:nth-of-type(5):checked ~ div#carousel {
   h1 {
     font-size: 5rem;
     line-height: 105%;
-    letter-spacing: 3px
+    letter-spacing: 3px;
   }
 
   /* barre de navigation  */
@@ -784,6 +785,10 @@ input:nth-of-type(5):checked ~ div#carousel {
   .footer-info {
     transform: translateX(-10px);
   }
+  .cards:hover {
+    width: 450px;
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -793,9 +798,9 @@ input:nth-of-type(5):checked ~ div#carousel {
     margin-left: 10%;
     margin-right: 10%;
   }
+
   h1 {
     font-size: 7rem;
-
     letter-spacing: 3px;
   }
 }
