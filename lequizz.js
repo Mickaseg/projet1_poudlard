@@ -14,7 +14,7 @@ class Question {
     new Question("Quel est votre projet", ["Dominer le monde pardi", "Devenir un grand sorcier du dev", "Avoir un robot domestique", "Avoir un fauteuil massant"], "Devenir un grand sorcier du dev"),
     new Question("Vous n'aimez pas vraiment", ["Patienter", "Prendre des intiatives", "Chercher", "Abandonner"], "Abandonner"),
     new Question("Quel est votre animal favori", ["Le serpent", "Le blaireau", "Le lion", "L'aigle"], "Le lion"),
-    new Question("Quel votre plus grand defaut", ["Je suis trop curieux, Curieuse","Je suis peureux", "Je suis un peut naif", "Je suis pas radin"], "Je suis trop curieux, Curieuse"),
+    new Question("Quel votre plus grand defaut", ["Je suis trop curieux, Curieuse","Je suis peureux", "Je suis un peut naif", "Je suis radin"], "Je suis trop curieux, Curieuse"),
     new Question("Quel pouvoir vous fait rever", ["Imperium","Crac badaboum","Allohomora","Crache limace"], "Allohomora"),
     new Question("Quelle est votre couleur favorite", ["Or","vert", "Le marron", "Bleu"], "Le doré")
   ];
