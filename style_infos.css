@@ -1,76 +1,173 @@
-@media  screen and (min-width = 1024px) {
-    .contenant{
-        flex-direction: row;
 
-    }
-    
+
+
+/**************************************************************************/
+.contenuInfos{
+    position: absolute;
+    top: 80px;
 }
 body{
     margin:0;
     padding:0;
-
-    background-image: url("./assets/fond_infos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+    background-color: #231e4e;
+     
+    
 }
-h1{
+
+.titre{
     color: #e1e3e1;
     text-align: center;
     background-color: #23282f;
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
-    
-}
-h2{
-    margin: 0;
-    text-size-adjust: ;
-    font-size: medium;
-}
-nav{
-    height: 100px;
-    background-color: #23282f;
+    font-size: 40px;
+    opacity: 0.95;
+    padding:0px;       
 }
 
-article{
+/***************************************CARTE****************************/
+.carte{
     display: flex;
+    max-height: 120px;
     flex-direction: row;
     justify-content: start;
-    width: 70%;
     margin: 0 auto;
-    opacity: 0.9;
-    max-height: 100px;
+    opacity: 0.95;
     margin-bottom: 10px;
     background-color: #23282f;
     color: #e1e3e1;
+    border: solid black 5px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
 
+    transition: all 100ms ease-out;
+}
+.carte:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.titreArticle{
+    margin: 0;
+    font-size: 20px;
+    
 }
 
-article > div{
-    
+.contenuArticle{
+    padding: 0%;
     margin-left: 10px;
     margin-right: 10px;
+    overflow: auto;
+    
 }
 
-
+.desciption{
+    font-size: 15px;
+}
 .vignette{
    height: auto;
    
-   width: 15%;
-   min-width: 100px;
-   max-width: 150px;
+   width: 100px;
+   
    border-radius: 15px;
 }
-
+/* ************************** FAQ *************************/
 .faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     background-color: #23282f;
-    opacity: 0.9;
+    opacity: 0.95;
     color: #e1e3e1;
+    margin-top: 15px;
+       
+    
 }
+.faqSearchBar{
+    background-color: #23282f;
+    border-radius: 10px;
+    border: solid black 5px;
+    color: #e1e3e1;
+    text-align: center;
+    margin:0 auto;
+}
+
+.faqContainer{
+    padding:1%;
+    margin: 0 5%;
+    height: auto;
+    border:2mm ridge #23282f; 
+    border-radius: 15px;  
+    box-shadow: 5px 5px 5px black;
+
+    cursor: pointer;
+    
+}
+   
+
+.faqContainerQuestion {
+    font-size: 20px;
+    font-style: normal; 
+
+}
+.faqContainerReponse {
+    display: none;
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+    
+/********************************* DESKTOP ****************************/
+@media  screen and (min-width: 850px) {
+    body{
+        background-image: url("./assets_Infos/Fond_infos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+    
+    .contenant{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        
+    }
+    
+    .carte{
+        flex-direction: column;
+        margin: 10% 0%;
+        width: 400px;
+        height: 400px;
+        max-height: 100%;
+        
+    }
+
+    .vignette{
+        width:100%;
+        height:150px;
+        min-width: 150px;
+        border-bottom: solid black 5px;
+        
+        object-fit: cover;    
+       
+    }
+    .contenuInfos{
+        width: 100%;
+        position: relative;
+                
+    }
+    .contenuArticle{
+       margin: 0% 5%;
+    }
+    .titreArticle{
+        margin-bottom: 10px;
+        border: solid black 5px;
+        border-radius: 10px;
+        text-align: center;
+}
+    }
+    
+

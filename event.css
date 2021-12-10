@@ -9,33 +9,33 @@ bgcolor: #231e4e */
 background: linear-gradient(to bottom, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap");
 
 @font-face {
-  font-family: 'harry_pregular';
-  src: url('font/harryp__-webfont.eot');
-  src: url('font/harryp__-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/harryp__-webfont.woff2') format('woff2'),
-       url('font/harryp__-webfont.woff') format('woff'),
-       url('font/harryp__-webfont.ttf') format('truetype'),
-       url('font/harryp__-webfont.svg#harry_pregular') format('svg');
+  font-family: "harry_pregular";
+  src: url("font/harryp__-webfont.eot");
+  src: url("font/harryp__-webfont.eot?#iefix") format("embedded-opentype"),
+    url("font/harryp__-webfont.woff2") format("woff2"),
+    url("font/harryp__-webfont.woff") format("woff"),
+    url("font/harryp__-webfont.ttf") format("truetype"),
+    url("font/harryp__-webfont.svg#harry_pregular") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 :root {
   --main-bg-color: #231e4e; /* (VIOLET)  */
-  --secondary-bg-color: #23282F; /* (GRIS)  */
-  --third-bg-color: #F7FFF7; /* (BLANC)  */
-  --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
-
+  --secondary-bg-color: #23282f; /* (GRIS)  */
+  --third-bg-color: #f7fff7; /* (BLANC)  */
+  --fourth-bg-color: #e1e3e1; /* (BEIGE)  */
+  --or-color: #ffc107;
+  --red-color: #ff5722;
   --light-font-color: #f1f1f1;
-  --dark-font-color: #23282F;
-  
-  --title-font-family: 'harry_pregular', serif;
-  --sous-titre-font-family: 'MonteCarlo', cursive;
-  --parag-font-family: 'Roboto', sans-serif;
+  --dark-font-color: #23282f;
+
+  --title-font-family: "harry_pregular", serif;
+  --sous-titre-font-family: "MonteCarlo", cursive;
+  --parag-font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -48,7 +48,7 @@ background: linear-gradient(to bottom, #734b6d, #42275a); /* W3C, IE 10+/ Edge, 
   text-decoration: none;
 }
 
-h1{
+h1 {
   color: var(--light-font-color);
   font-family: var(--title-font-family);
   font-size: 5em;
@@ -62,8 +62,9 @@ h2{
   letter-spacing: 1.2px;
 }
 
-h3{
+h3 {
   font-size: 2rem;
+  font-family: var(--parag-font-family);
 }
 p{
   font-family: var(--parag-font-family);
@@ -82,11 +83,11 @@ a{
   position: relative;
   width: 100%;
   height: 80px;
-  background-color: #23282f;
+  background-color: var(--secondary-bg-color);
   opacity: 0.95;
   border-bottom: #aaa solid 1px;
   z-index: 205;
-  
+  font-family: var(--parag-font-family);
 }
 
 .nav-bar-gauche {
@@ -107,16 +108,14 @@ a{
 /*************** ANIMATIONS LIENS DE LA BARRE DE NAVIGATION********/
 .nav-bar-liens {
   display: inline-block;
- 
 }
-
 
 .nav-bar-liens::after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background: var(--or-color);
   margin: 5px auto 0 auto;
   transition: width 0.3s ease-out;
 }
@@ -151,7 +150,7 @@ a{
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background-color: goldenrod;
+  background-color: var(--or-color);
   position: absolute;
   transition: all 0.5s ease-in-out;
 }
@@ -185,7 +184,7 @@ a{
   height: calc(100vh - 80px);
   /* min-height: 900px; */
   width: 100%;
-  background-color: #23282f;
+  background-color: var(--secondary-bg-color);
   position: relative;
   z-index: 200;
   left: -100%;
@@ -212,7 +211,7 @@ a{
 
 .nav-bar-phone-items a {
   position: relative;
-  color: #aaa;
+  color: var(--light-font-color);
 }
 
 .nav-bar-phone-items a::after {
@@ -222,7 +221,7 @@ a{
   bottom: -5px;
   display: block;
   width: 50%;
-  background: #aaa;
+  background: var(--or-color);
   height: 2px;
   transition: all 0.3s ease-out;
 }
@@ -238,7 +237,7 @@ a{
   bottom: -5px;
   display: block;
   width: 50%;
-  background: #aaa;
+  background: var(--or-color);
   height: 2px;
   transition: all 0.3s ease-out;
 }
@@ -251,7 +250,7 @@ a{
   left: 0px;
   opacity: 1;
 }
-.phoneScrollStop{
+.phoneScrollStop {
   position: fixed;
   width: 100%;
 }

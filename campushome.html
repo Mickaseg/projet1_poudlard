@@ -13,25 +13,23 @@
     <link rel="stylesheet" href="styleslyndia.css" />
   </head>
   <body>
-    <main class="mainCampus">
-        
-      </div> 
     <header>
-      <!-- barre de navigation jd ff-->
+      <!------------------------------------- Début barre de navigation ----------------------------->
       <nav class="nav-bar">
         <!-- nav bar gauche -->
         <ul class="nav-bar-gauche">
-          <li class="nav-bar-liens"><a href="#">Ecole</a></li>
-          <li class="nav-bar-liens"><a href="#">Campus</a></li>
-          <li class="nav-bar-liens"><a href="#">Programme</a></li>
+          <li class="nav-bar-liens"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-liens"><a href="campushome.html">Campus</a></li>
+          <li class="nav-bar-liens"><a href="formation.html">Programme</a></li>
         </ul>
 
         <!-- logo -->
-        <img
-          class="nav-bar-logo levitate"
-          src="http://y1n.fr/Favicon/HarryFavicon.ico"
-          alt="logo de poudlard"
-        />
+        <a href="index.html"
+          ><img
+            class="nav-bar-logo levitate"
+            src="http://y1n.fr/Favicon/HarryFavicon.ico"
+            alt="logo de poudlard"
+        /></a>
 
         <!-- hamburger -->
         <div id="nav-bar-hamburger">
@@ -43,31 +41,38 @@
         </div>
         <!-- nav bar droite -->
         <ul class="nav-bar-droite">
-          <li class="nav-bar-liens"><a href="#">Evenements</a></li>
-          <li class="nav-bar-liens"><a href="#">Vie Etudiante</a></li>
-          <li class="nav-bar-liens"><a href="#">Info</a></li>
+          <li class="nav-bar-liens"><a href="event.html">Evenements</a></li>
+          <li class="nav-bar-liens">
+            <a href="vieetudiante.html">Vie Etudiante</a>
+          </li>
+          <li class="nav-bar-liens"><a href="infos.html">Info</a></li>
         </ul>
       </nav>
       <!-- Menu telephone -->
       <nav class="nav-bar-phone">
         <ul class="nav-bar-phone-liste">
-          <li class="nav-bar-phone-items"><a href="#">Home</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Ecole</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Campus</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Programme</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Evenements</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Vie étudiante</a></li>
-          <li class="nav-bar-phone-items"><a href="#">Info</a></li>
+          <li class="nav-bar-phone-items"><a href="index.html">Home</a></li>
+          <li class="nav-bar-phone-items"><a href="school.html">Ecole</a></li>
+          <li class="nav-bar-phone-items">
+            <a href="campushome.html">Campus</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="formation.html">Programme</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="event.html">Evenements</a>
+          </li>
+          <li class="nav-bar-phone-items">
+            <a href="vieetudiante.html">Vie étudiante</a>
+          </li>
+          <li class="nav-bar-phone-items"><a href="infos.html">Info</a></li>
         </ul>
       </nav>
-
-      <!-- Bannière -->
-
-      
-    </header>
+<!-------------------------------- Fin Barre de navigation --------------------------------------------------->
     <video autoplay muted loop id="starvideo">
       <source src="videos/stargold.mp4" type="video/mp4">
-  </video>
+    </video>
+   
     <div class="campus">
       <h1 class="bienvenue">Bienvenue au Campus de Poudlard</h1>
       <div>
@@ -97,7 +102,9 @@
       </div>
        
   </section>
-    </main> 
+   
+    <footer class="footer"><h1>Yo c'est oim le footer</h1></footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

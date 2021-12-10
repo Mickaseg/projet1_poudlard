@@ -1,9 +1,31 @@
-/* Couleurs principales
-bgcolor: #23282F (GRIS) 
-bgcolor: #F7FFF7 (BLANC) 
-bgcolor: #E1E3E1 (BEIGE) 
-bgcolor: #444389 (VIOLET) 
-bgcolor: #231e4e */
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap');
+
+@font-face {
+  font-family: 'harry_pregular';
+  src: url('font/harryp__-webfont.eot');
+  src: url('font/harryp__-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/harryp__-webfont.woff2') format('woff2'),
+       url('font/harryp__-webfont.woff') format('woff'),
+       url('font/harryp__-webfont.ttf') format('truetype'),
+       url('font/harryp__-webfont.svg#harry_pregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root {
+  --main-bg-color: #231e4e; /* (VIOLET)  */
+  --secondary-bg-color: #23282F; /* (GRIS)  */
+  --third-bg-color: #F7FFF7; /* (BLANC)  */
+  --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
+
+  --light-font-color: #f1f1f1;
+  --dark-font-color: #23282F;
+  
+  --title-font-family: 'harry_pregular', serif;
+  --sous-titre-font-family: 'MonteCarlo', cursive;
+  --parag-font-family: 'Roboto', sans-serif;
+}
 
 *,
 ::before,
@@ -15,15 +37,42 @@ bgcolor: #231e4e */
   text-decoration: none;
 }
 
-/***************************** Barre de navigation ***************************************/
+h1{
+  color: var(--light-font-color);
+  font-family: var(--title-font-family);
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  font-family: var(--sous-titre-font-family);
+  letter-spacing: 1.2px;
+}
+
+h3{
+  font-size: 2rem;
+}
+p{
+  font-family: var(--parag-font);
+  font-size: 1.2em;
+}
+
+a{
+  font-family: var(--parag-font);
+}
+/***************************** BARRE DE NAVIGATION ***************************************/
 
 .nav-bar {
   position: relative;
   width: 100%;
   height: 80px;
   background-color: #23282f;
+  opacity: 0.95;
   border-bottom: #aaa solid 1px;
   z-index: 205;
+  
 }
 
 .nav-bar-gauche {
@@ -41,10 +90,13 @@ bgcolor: #231e4e */
   z-index: 1000;
 }
 
-/* Animation liens de la barre de navigation */
+/*************** ANIMATIONS LIENS DE LA BARRE DE NAVIGATION********/
 .nav-bar-liens {
   display: inline-block;
+ 
 }
+
+
 .nav-bar-liens::after {
   content: "";
   display: block;
@@ -117,17 +169,18 @@ bgcolor: #231e4e */
 
 .nav-bar-phone {
   height: calc(100vh - 80px);
-  min-height: 900px;
+  /* min-height: 900px; */
   width: 100%;
   background-color: #23282f;
   position: relative;
   z-index: 200;
   left: -100%;
+  opacity: 0;
   transition: all 0.5s ease;
 }
 
 .nav-bar-phone-liste {
-  padding-top: 200px;
+  padding-top: 35px;
   width: 100%;
   height: 100%;
 }
@@ -140,6 +193,7 @@ bgcolor: #231e4e */
   align-items: center;
   padding-left: 70px;
   font-size: 25px;
+  font-family: var(--parag-font-family);
 }
 
 .nav-bar-phone-items a {
@@ -181,14 +235,18 @@ bgcolor: #231e4e */
 
 .phoneVisible {
   left: 0px;
+  opacity: 1;
 }
-
+.phoneScrollStop{
+  position: fixed;
+  width: 100%;
+}
 /* Header Index */
 
 .index-header {
   position: absolute;
   top: 80px;
-  width: 100%;
+  width: 101%;
   height: calc(100vh - 80px);
   background: linear-gradient(
       180deg,
@@ -196,72 +254,14 @@ bgcolor: #231e4e */
       rgba(54, 54, 54, 0.5) 39.24%,
       rgba(28, 28, 28, 0.4)
     ),
-url(poudlard1.jpg) center center/ cover no-repeat;
+    url(img/poudlard1.jpg) center center/ cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h1{
-  color: #010101;
-  font-size: 2.5em;
-  font-weight: bold;
-}
-@media screen and (min-width: 850px) {
-  /* barre de navigation  */
-
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-bar-phone {
-    display: none;
-  }
-  .nav-bar-gauche {
-    display: block;
-  }
-  .nav-bar-droite {
-    display: block;
-  }
-
-  .nav-bar-liens > a {
-    padding: 20px;
-    font-size: 20px;
-    color: #f7fff7;
-  }
-
-  .nav-bar-logo {
-    position: absolute;
-    width: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  
-/* Animation lévitatiton */
-
-@keyframes do-levitation {
-  0% {
-    transform: translate(-40%, -50%);
-  }
-  100% {
-    transform: translate(-66%, -50%);
-  }
-}
-
-.levitate {
-  animation: do-levitation 1.2s alternate ease-in-out infinite;
-}
-
-  #nav-bar-hamburger {
-    display: none;
-  }
-
   /* Header  */
-}
+
 #starvideo {
   width: 100%;
   height: 100vh;
@@ -290,9 +290,9 @@ h1{
  
 }
 .bienvenue {
-  font-size: 40px;
+  font-size: 60px;
   margin: 10px 0;
-  color: floralwhite;
+  color:  #E1E3E1;;
 
 }
 .campus {
@@ -323,10 +323,78 @@ h1{
   border-top-right-radius: 8px;
 }
 .h2campus {
+  line-height: .8;
+  font-size: 35px;
   text-align:center;
   color: goldenrod;
 }
 .pcampus {
+  font-size: 18px;
   text-align:justify;
   margin: 10px 10px;
+}
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: #23282f;
+}
+@media screen and (min-width: 850px) {
+  /* barre de navigation  */
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar-phone {
+    display: none;
+  }
+  .nav-bar-gauche {
+    display: block;
+  }
+  .nav-bar-droite {
+    display: block;
+  }
+
+  .nav-bar-liens > a {
+    padding: 20px;
+    font-size: 20px;
+    color: #f7fff7;
+    font-family: var(--parag-font);
+  }
+
+  .nav-bar-logo {
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mainBloc{
+    position: absolute;
+    top: calc(100vh);
+    width: 100%;
+    /* height: calc(100vh - 80px); */
+  }
+  
+/* Animation lévitatiton */
+
+@keyframes do-levitation {
+  0% {
+    transform: translate(-30%, -50%);
+  }
+  100% {
+    transform: translate(-80%, -50%);
+  }
+}
+
+.levitate {
+  animation: do-levitation 1.2s alternate ease-in-out infinite;
+}
+
+  #nav-bar-hamburger {
+    display: none;
+  }
 }
