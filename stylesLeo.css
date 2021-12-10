@@ -253,22 +253,6 @@ a {
 }
 /* Header Index */
 
-.index-header {
-  position: absolute;
-  top: 80px;
-  width: 100%;
-  height: calc(100vh - 80px);
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.92),
-      rgba(54, 54, 54, 0.5) 39.24%,
-      rgba(28, 28, 28, 0.4)
-    ),
-    url(img/poudlard1.jpg) center center/ cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media screen and (min-width: 850px) {
   /* barre de navigation  */
@@ -330,6 +314,23 @@ a {
   .nav-bar-liens {
     padding: 40px;
   }
+}
+
+.index-header {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(54, 54, 54, 0.5) 39.24%,
+      rgba(28, 28, 28, 0.4)
+    ),
+    url(img/poudlard1.jpg) center center/ cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* angle en bas  */
