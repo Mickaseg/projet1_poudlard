@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="http://y1n.fr/Favicon/HarryFavicon.ico"/> 
+    <link rel="stylesheet" href="styleslyndia.css">
+    <link rel="stylesheet" href="stylesLeo.css">
+    <script src="https://kit.fontawesome.com/59ca6f73f8.js" crossorigin="anonymous"></script>
     <title>Campus</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="http://y1n.fr/Favicon/HarryFavicon.ico"
-    />
-    <link rel="stylesheet" href="styleslyndia.css" />
-  </head>
-  <body>
-    <header>
+</head>
+<body>
       <!------------------------------------- Début barre de navigation ----------------------------->
       <nav class="nav-bar">
         <!-- nav bar gauche -->
@@ -69,6 +65,7 @@
         </ul>
       </nav>
 <!-------------------------------- Fin Barre de navigation --------------------------------------------------->
+  <main class="campus">   
     <video autoplay muted loop id="starvideo">
       <source src="videos/stargold.mp4" type="video/mp4">
     </video>
@@ -78,33 +75,120 @@
       <div>
         <img class="campusImg" src="images/plancampus.jpeg">
       </div> 
-  <section class="globalCard">
 
-      <div class="kiosque">
-        <img class="cardImg" src="images/pensionnat.jpeg">
-        <h2 class="h2campus">Pensionnat</h2>
-        <p class="pcampus">tyyrjjdnfevk</p>
-      </div>
-      <div class="kiosque">
+  <section class="globalCard">
+    <div class="kiosque">
+      <button id="roomButton" class="cardButton"  onclick="myFunction1()">
+          <img class="cardImg" src="images/pensionnat.jpeg">
+          <h2 class="h2campus">Pensionnat</h2>
+          <p class="pcampus">Découvrez nos offres de pension au sein de nos maisons.</p>
+      </button>
+    </div>
+    <div class="kiosque">
+      <button class="cardButton" id="libraryButton"  onclick="myFunction2()">
         <img class="cardImg" src="images/bibliotheque.jpeg">
         <h2 class="h2campus"> Bibliothèque</h2>
-        <p class="pcampus">tyyrjjdnfevk</p>
-      </div>
-      <div class="kiosque">
+        <p class="pcampus">Venez profitez de notre merveilleuse collection de livres et plus encore...</p>
+      </button>
+    </div>
+    <div class="kiosque">
+      <button class="cardButton" id="restoButton" onclick="myFunction3()">
         <img class="cardImg" src="images/salle-commune.jpeg">
         <h2 class="h2campus">Restauration</h2>
-        <p class="pcampus">tyyrjjdnfevk</p>
-      </div>
-      <div class="kiosque">
+        <p class="pcampus">Dans un cadre charmant, dégustez les plats de notre nouveau Chef !</p>
+      </button>
+      
+    </div>
+    <div class="kiosque">
+      <button class="cardButton" id="clubButton"  onclick="myFunction4()">
         <img class="cardImg" src="images/chateau-plan.jpeg">
         <h2 class="h2campus">Les Club du Campus</h2>
-        <p class="pcampus">tyyrjjdnfevk</p>
-      </div>
-       
-  </section>
-   
-    <footer class="footer"><h1>Yo c'est oim le footer</h1></footer>
+        <p class="pcampus">Quel cercle étudiants rejoindrez-vous ?</p>
+      </button>
     </div>
-    <script src="script.js"></script>
+  </section>
+  <section id="page">
+    <div id="infoRoom">
+      <div class="infoCard">
+        <h2 class="infoTitle">Envie de passer votre année scolaire avec nous...</h2>
+        <p class="infoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias quos neque vero. Eligendi, aperiam enim totam amet voluptas recusandae perferendis voluptate odit eveniet nesciunt asperiores sapiente magni ullam eos?</p>
+        <h2 class="infoSousTitle">La scolarité en pension complète</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+        <h2 class="infoSousTitle">Demi pension, nos solutions</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+     
+      </div>
+    </div>
+    <div id="infoLibrary" >
+      <div class="infoCard">
+        <h2 class="infoTitle">Le Silence est d'Or mais le Savoir est Roi...</h2>
+        <p class="infoText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eum consequuntur eos optio similique quod mollitia soluta veniam velit, aut a ipsa eligendi accusantium temporibus, quibusdam maxime quidem eaque voluptate?</p>
+        <h2 class="infoSousTitle">Ouvrez les portes du royaume des conaissances</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+        <h2 class="infoSousTitle">Nouveau ! Notre librairie se numérise</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+     
+      </div>
+    </div>
+    <div id="infoResto" >
+      <div class="infoCard">
+        <h2 class="infoTitle">Une année d'exeption pour vos papilles</h2>
+        <p class="infoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum voluptates velit architecto qui temporibus! Fugiat deserunt sit animi adipisci tenetur, voluptatibus soluta, eaque quo error eius, cumque iusto porro!</p>
+        <h2 class="infoSousTitle">Notre Nouveau Directeur culinaire, le Chez Syrup DeBonpalais</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+        <h2 class="infoSousTitle">La restauration, un univers au fil des saisons</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+       
+      </div>
+    </div>
+    <div id="infoClub">
+      <div class="infoCard">
+        <h2 class="infoTitle">Epanouissez avec notre panel d'activités!</h2>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+        <h2 class="infoSousTitle">Nos Club étudiants n'attendent que vous</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+        <h2 class="infoSousTitle">Nouveau ! Des activités consacrés à l'univers Moldus</h3>
+        <p class="infoText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nemo aliquam laboriosam distinctio. Aut quo, incidunt dolores a dolor possimus cupiditate. Facilis quas, veniam repellat minima dolorum molestias a possimus.</p>
+   
+      </div>
+    </div>
+  </section>
+  
+       
+  
+  </main>  
+  <footer class="footer">
+    <div class="footer-first">
+      <div class="footer-div">
+        <h3>Coordonnées</h3>
+        <p>Adresse</p>
+        <p>05 51 45 89 78</p>
+        <p>pourdlard@sorcier.com</p>
+      </div>
+      <div class="footer-div">
+        <h3>S'engager</h3>
+        <a href="#">Devenir Professeur</a>
+        <a href="#">Devenir élève</a>
+      </div>
+      <div class="footer-div">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a><a href="school.html">Ecole</a><a href="campushome.html">Campus</a><a href="formation.html">Programme</a><a href="event.html">Evenements</a><a href="vieetudiante.html">Vie Etudiante</a><a href="infos.html">Info</a>
+      </div>
+    </div>
+    <div class="footer-second">
+      <!-- <div class="copyrightfooter"></div> -->
+        <p class="footer-div">Copyright @ 2021</p>
+        <img class="logo-footer footer-div" src="./img/logo_Ecole_Grand_Modele.png" title="logo">
+        <div class="reseaux-sociaux-bloc footer-div">
+          <a href="https://www.facebook.com/DanielRadcliffeNews/?hc_ref=ARQ1RnCu-aBHhLn8PH3xDGhRRYKgz5OXVm9j1yYX7JuxU5O4EmBXjIbjN2FPzzIP5Po&fref=nf&__tn__=kC-R"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/poudlard__fr/?hl=fr"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com/Poudlard_fr"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://github.com/Mickaseg/projet1_poudlard"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+
+    </footer>
+    
+    <script src="script.js"> </script>
   </body>
 </html>

@@ -42,7 +42,7 @@ document.querySelectorAll('.reveal-left, .reveal-right').forEach(function(r) {
 
 const menuderoulant = document.getElementById("navbar")
 const wrap = document.getElementById("buttonnav")
-const contenue = document.getElementById("contenuei")
+const contenuei = document.getElementById("contenuei")
 contenuei.style.display = "block"
 
 li1.addEventListener("click", function(){ 
@@ -135,3 +135,46 @@ submit.addEventListener("click", function() {
 })
 
 // Fin de Partie de Yan
+
+//lyndia code//
+
+function myFunction1() {
+    document.getElementById("infoRoom").style.display = "block";
+    document.getElementById("infoLibrary").style.display = "none";
+    document.getElementById("infoResto").style.display = "none";
+    document.getElementById("infoClub").style.display = "none";
+    document.getElementById("roomButton").style = "box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.85)";
+    document.getElementById("libraryButton").style ="box-shadow: none"
+    document.getElementById("restoButton").style ="box-shadow: none"
+    document.getElementById("clubButton").style ="box-shadow: none"
+}
+function myFunction2() {
+  document.getElementById("infoRoom").style.display = "none";
+  document.getElementById("infoLibrary").style.display = "block";
+  document.getElementById("infoResto").style.display = "none";
+  document.getElementById("infoClub").style.display = "none";
+  document.getElementById("roomButton").style ="box-shadow: none"
+  document.getElementById("libraryButton").style = "box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.85)";
+  document.getElementById("restoButton").style ="box-shadow: none"  
+  document.getElementById("clubButton").style ="box-shadow: none"
+}
+function myFunction3() {
+  document.getElementById("infoRoom").style.display = "none";
+  document.getElementById("infoLibrary").style.display = "none";
+  document.getElementById("infoResto").style.display = "block";
+  document.getElementById("infoClub").style.display = "none";
+  document.getElementById("roomButton").style ="box-shadow: none"
+  document.getElementById("libraryButton").style ="box-shadow: none"
+  document.getElementById("restoButton").style = "box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.85)";
+  document.getElementById("clubButton").style ="box-shadow: none"
+}
+function myFunction4() {
+  document.getElementById("infoRoom").style.display = "none"; 
+  document.getElementById("infoLibrary").style.display = "none";
+  document.getElementById("infoResto").style.display = "none";
+  document.getElementById("infoClub").style.display = "block";
+  document.getElementById("roomButton").style ="box-shadow: none"
+  document.getElementById("libraryButton").style ="box-shadow: none"
+  document.getElementById("restoButton").style ="box-shadow: none"
+  document.getElementById("clubButton").style ="box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.85)";
+} 
