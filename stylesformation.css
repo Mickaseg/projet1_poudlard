@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap");
 
+
+:root {
+  --main-bg-color: #231e4e; /* (VIOLET)  */
+  --secondary-bg-color: #23282f; /*(GRIS)  */
+  --third-bg-color: #f7fff7; /* (BLANC)  */
+  --fourth-bg-color: #e1e3e1; /* (BEIGE)*/
+  --or-color: #ffc107;
+  --red-color: #ff5722;
+  --light-font-color: #f1f1f1;
+  --dark-font-color: #23282f;
+  --title-font-family: "harry_pregular", serif;
+  --sous-titre-font-family: "MonteCarlo", cursive;
+  --parag-font-family: "Roboto", sans-serif;
+}
 @font-face {
   font-family: "harry_pregular";
   src: url("font/harryp__-webfont.eot");
