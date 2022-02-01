@@ -397,6 +397,7 @@ border-radius: 5px;
 
     body {
         cursor : default;
+        height: 100%;
     }
 
     #blockactu {
@@ -459,9 +460,12 @@ border-radius: 5px;
     }
  
      #footer {
-        position : absolute;
-        bottom: 0;
         width : 100%;
+     }
+
+     #themain {
+         height : 100%;
+         flex-shrink: 0;
      }
 
 }
